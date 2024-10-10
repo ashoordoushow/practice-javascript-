@@ -91,6 +91,80 @@ console.log(word3.toLocaleLowerCase());  // this is also another way of writing 
 
 // BASIC DELIBERATE PRACTICE LINK2
 
+// 1 // Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.
+
+var number = 46;
+if (number === 10) {
+  console.log(0);
+} 
+else {
+  console.log(-1);
+}
+
+var number = 10;       // this is how you write 'if statements for javascript, apparently you need 3 '=' signs to set a variable equal to something in javascript + you use paranthesis and hashes when writing 'if statements'
+if (number === 10) {
+  console.log(0);
+}
+else {
+  console.log(-1);
+}
+
+var number = 90;
+if (number === 10) {
+  console.log(0);
+}
+else {
+  console.log(-1);
+}
+
+var number = 10;
+if (number === 10) {
+  console.log(0);
+}
+else {
+  console.log(-1);
+}
+
+// 2 // Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10.
+
+var number = 77
+if (number < 10) {       
+  console.log(-1);
+}
+else if (number > 10) {   // when writing 'elsif' in javascript must write it like this 'else if' (spaced)
+  console.log(1);
+}
+else {
+  console.log(0);
+}                   // i think the hashes kind of represent the 'end' for javascript
+
+
+var number = 10;
+if (number < 10) {
+  console.log(-1);
+}
+else if (number > 10) {
+  console.log(1);
+}
+else {
+  console.log(0);
+}
+
+var number = 2
+if (number < 10) {
+  console.log(-1);
+}
+else if (number > 10) {
+  console.log(1);
+}
+else {
+  console.log(0);
+}
+
+// 3 // Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
+
+var number1 = 55
+var number2 = 70
 
 
 
