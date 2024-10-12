@@ -282,3 +282,57 @@ else if (number1 > 20) {
 else {
   console.log(1);
 }
+
+var number = 2;
+if (number > 80) {
+  console.log(5);
+}
+else if (number > 60) {
+  console.log(4);
+}
+else if (number > 40) {
+  console.log(3);
+}
+else if (number > 20) {
+  console.log(2);
+}
+else {
+  console.log(1);
+}
+
+
+// DELIBERATE PRACTICE LINK3
+
+// 1 // Write a while loop to print the numbers 1 through 10.
+
+var number = 1;
+while (number <= 10) {
+  console.log(number);
+  number = number + 1;
+}
+
+// 2 // Write a while loop that prints the word "hello" 5 times.
+
+var number = 0;
+while (number < 5) {
+  console.log("hello");
+  number = number + 1;
+}
+
+// 3 // Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
+
+while (true) {
+  var input = window.prompt("Enter a word: ");  // 'window.prompt' is = to 'gets.chomp from Ruby
+  if (input === "stop") {                       // Remember whatever statement/method you're using always make sure you got you '()' and '{}' after
+    break;
+  }
+}
+
+while (true) {
+  var input = window.prompt("Enter a word: "); //Also the 'window.prompt' method is written outside and before the parenthesis
+  if (input === "stop") {
+    break;
+  }
+}
+
+// NOT SURE IF ^ IS THE CORRECT SYNTAX / NEXT WILL BE QUESTION 4 LINK3 DELIBERATE PRACTICE BELOW
