@@ -418,11 +418,109 @@
 
 // 3 // Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
-const array = [23, 12, 2, 3, 3];
-var number = 0;
-while (number < array.length) {
-  console.log(array[number]);
-  number = number + 1;
-}
+// const array = [23, 12, 2, 3, 3];
+// var number = 0;
+// while (number < array.length) {
+//   console.log(array[number]);
+//   number = number + 1;
+// }
 
 // DELIBERATE PRACTICE LINK4
+
+// 4 // Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+
+// var array = [23];
+// array.push(2);
+// array.push(33);
+// array.push(22);
+// console.log(array);
+
+// 5 // Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
+
+// var array = ["bobby", "cool", "wow"];
+
+
+// var strings = ["hello", "hello", "hello"];
+// strings[2] = strings[2].toUpperCase();
+// console.log(strings);
+
+// 6 // Create an array to store 3 names. Then print out each name on separate lines with a while loop.
+
+// var names = ["bobby", "michael", "jordan"];
+// var index = 0;
+// while (index < names.length) {   // so what this code block is doing is setting a variable for the while loop to print out each of the slots(positions are slot 0, 1, 2 = total 3 slots) in the array to print each string on a line, then increasing the value of the variable so the next string prints out on another line until all strings are printed out. 
+//   console.log(names[index]);
+//   index = index + 1;
+// }
+
+// var names = ["honda", "toyota", "mercadez"];
+// var index = 0;
+// while (index < names.length) {
+//   console.log(names[index]);
+//   index += 1;
+// }
+
+// 7 // Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+// var strings = ["hello", "world"];
+// strings[2] = "happy";             // this is how i wrote the code block to answer the question
+// console.log(strings);
+
+// var strings = ["remote", "hybrid"];
+// strings.push("on-site");     // Methods are functions that belong to the object that performs an action on it by calling methods with parenthesis
+// console.log(strings);       // properties are attributes that describe the object (no paranthesis/not calling a method) || The object is the array with strings
+
+// 8 // Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
+
+// var numbers = [4, 23, 3, 76, 2];
+// numbers[0] *= 10;
+// console.log(numbers);
+
+// 9 // Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
+
+// var numbers = [23, 45];
+// var index = 0;                           //meaning of 'index' - position or location of an element within a collection (such as an array)
+// while (index < numbers.length) {
+//   console.log(numbers[index]);
+//   index += 1;
+// }
+
+// 10 // Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+
+// var countries = ["United States", "Russia", "India"];
+// countries.push("Mexico");
+// console.log(countries);
+
+// DELIBERATE PRACTICE LINK 5
+
+// 1 // Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+
+// var firstPerson = { firstname: "bob", lastname: "michael", email: "bobmichael@hotmail.com"};
+// console.log(firstPerson);
+
+// 2 // Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+
+// var people = [
+//   { firstname: "bob", lastname: "michael" },
+//   { firstname: "john", lastname: "jackson" },
+//   { firstname: "kane", lastname: "bubbly" }
+// ];
+// console.log(people[0]);
+
+// 3 // Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+
+// var menuitems = { hamburger: "$4.00", hotdog: "$3.00", pepsi: "$2.00" };
+// menuitems["fries"] = "$2.50";                      // the better way is just to put the numbers without it being a string and $ sign, and decimals
+// console.log(menuitems);
+
+// var menu = { coleslaw: 5, cake: 10, chicken: 2};
+// menu["onion rings"] = 4;      // 
+// console.log(menu);
+
+// 4 // Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+
+
+
+
+
+
