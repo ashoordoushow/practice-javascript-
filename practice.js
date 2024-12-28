@@ -519,6 +519,149 @@
 
 // 4 // Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
+// var book = {title: "hunger games", author: "ben", pages: 200, language: "english"};
+// console.log(book);   // this worked fine, but "proper" way is to console.log each attribute like below
+
+// console.log(book["title"]);
+// console.log(book.author);
+// console.log(book.pages);
+// console.log(book["language"]);
+
+// 5 // Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+
+// var books = [
+//   {title: "outsiders", author: "bob"},
+//   {title: "baskteball", author: "jordan"},
+//   {title: "soccer", author: "messi"}
+// ];
+
+// console.log(books[2].author);
+
+// 6 // Make a hash to store 3 different states and their capitals. Then add a new state and capital and print the hash to see the result.
+
+// var states = { California: "Sacremento", Texas: "Austin", Florida: "Tallahassee"};
+// states["New York"] = "Albany";
+// console.log(states);
+
+// 7 // Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+// var laptop = {brand: "apple", model: "macbook air 2", year: 2022};
+// console.log(laptop.brand);
+// console.log(laptop.model);
+// console.log(laptop.year);
+
+// 8 // Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+// var laptops = [
+//   {brand: "hp", model: 12},
+//   {brand: "apple", model: "air"},
+//   {brand: "sony", model: 3}
+// ];
+
+// console.log(laptops[1].model);
+
+// 9 // Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
+
+// var words = {apple: "fruit", wood: "tree like material"};
+// words["shoe"] = "footware";
+// console.log(words);
+
+// 10 // Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+// var shirt = {brand: "nike", color: "purple", size: "Large"};
+// console.log(shirt.brand);
+// console.log(shirt.color);
+// console.log(shirt.size);
+
+// DELIBERATE PRACTICE LINK 6 BASIC
+
+// 1 // Write a method that takes in a number and returns the number times two. Then run the method and print the result.
+
+// function multiplyByTwo(number) {
+//   return number * 2;
+// }
+// console.log(multiplyByTwo(10));
+
+
+// - Function Declaration (function multiplyByTwo(number) { ... }):
+// function: This keyword declares a function.
+// multiplyByTwo: This is the name of the function.
+// (number): The function has a single parameter named number. This represents the input value that the function will use.
+// - return number * 2;: The function multiplies the input (number) by 2 and returns the result. The return keyword ensures that the value is sent back to the part of the code that called the function.
+// - Function Call (console.log(multiplyByTwo(10));):
+// multiplyByTwo(10): The function is called (or invoked) with the argument 10.
+// Here, 10 is passed to the number parameter of the function.
+// Inside the function, number is 10, so number * 2 evaluates to 20.
+// The function returns 20.
+// - console.log(...): This prints the result returned by the function (20) to the terminal or console.
+
+// function multiplyByTwo(number) {
+//   return number * 2;
+// }
+// console.log(multiplyByTwo(40));
+
+// 2 // Write a method that takes in a string and returns the string with all capital letters. Then run the method and print the result.
+
+// function makeUpperCase(string) {
+//   return string.toUpperCase();
+// }
+// console.log(makeUpperCase("schoolbus"));
+
+// 3 // Write a method that takes in two numbers and returns the first number subtracted by the second. Then run the method and print the result.
+
+// function subtracted(number1, number2) {
+//   return number1 - number2;
+// }
+// console.log(subtracted(25, 5));
+
+// 4 // Write a method that takes in a number and returns the number times itself. Then run the method and print the result.
+
+// function multipliedByItself(number) {
+//   return number * number;
+// }
+// console.log(multipliedByItself(5));
+
+// 5 // Write a method that takes in a string and returns the first letter of the string. Then run the method and print the result.
+
+// function firstLetter(string) {
+//   return string.charAt(0);
+// }
+// console.log(firstLetter("basketball"));
+
+// OR 
+
+// function firstLetter(string) {
+//   return string[0];
+// }
+// console.log(firstLetter("basketball"));
+
+// 6 // Write a method that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the method and print the result.
+
+// function stringsWithSpaces(string1, string2, string3) {
+//   return string1 +  " " + string2 + " " + string3;
+// }                                        // ALL of these answers for this link are functions! Not Methods! Method is a function that is a property of an object (arrays and hashes)
+// console.log(stringsWithSpaces("I", "Love", "Sports"));
+
+// 7 // Write a method that takes in a number and returns the number as a string. Then run the method and print the result.
+
+// function numberToString(number) {
+//   return number.toString();
+// }                                 //apparently this code is correct, but for some reason not appearing as a string in terminal
+// console.log(numberToString(23));
+
+// 8 // Write a method that takes in a string and returns the string repeated 5 times. Then run the method and print the result.
+
+// function stringRepeated5Times(string) {
+//   return string + string + string + string + string;
+// }
+// console.log(stringRepeated5Times("hello"));
+
+// 9 // Write a method that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the method and print the result. 
+
+
+
+
+
 
 
 
