@@ -656,7 +656,74 @@
 // }
 // console.log(stringRepeated5Times("hello"));
 
-// 9 // Write a method that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the method and print the result. 
+// 9 // Write a method that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the method and print the result.
+
+// function averageOfTotalNumbers(number1, number2, number3) {
+//   return (number1 + number2 + number3) / 3;
+// }
+// console.log(averageOfTotalNumbers(2, 30, 40));
+
+// 10 // Write a method that takes in a number and returns the number times 10 plus 30. Then run the method and print the result.
+
+// function numberTimes10Plus30(number) {
+//   return number * 10 + 30;
+// }
+// console.log(numberTimes10Plus30(20));
+
+// DELIBERATE PRACTICE LINK 7 BASIC
+
+// 1 // Write a Song class with attributes for name, artist, and duration.
+
+class Song {
+  constructor(name, artist, duration) {
+    this.name = name;
+    this.artist = artist;
+    this.duration = duration;
+  }
+}
+var song = new Song("Gloria", "Patti Smith", "5:56");
+console.log(song);           // When you come back to this, Read the explanation below and understand this code block fully before moving on to the next question.
+
+// Explanation:
+// class Song {
+// This defines a new class named Song.
+// A class is like a blueprint for creating objects. It encapsulates data and methods (functions) that operate on that data.
+// constructor(name, artist, duration) {
+// The constructor is a special method of the class that gets called automatically when a new object of the class is created.
+// It’s used to initialize the object’s properties.
+// this.name = name;
+// The this keyword refers to the current instance of the class (the object being created).
+// This line sets the name property of the object to the name parameter passed to the constructor.
+// this.artist = artist;
+// This sets the artist property of the object to the value of the artist parameter passed to the constructor.
+// this.duration = duration;
+// This sets the duration property of the object to the value of the duration parameter passed to the constructor.
+// } (Closing the constructor and class)
+// Ends the constructor method and the Song class definition.
+// var song = new Song("Gloria", "Patti Smith", "5:56");
+// This creates a new instance of the Song class using the new keyword.
+// The Song class’s constructor is called with the arguments "Gloria", "Patti Smith", and "5:56".
+// A new object is created with:
+// javascript
+// Copy code
+// {
+//   name: "Gloria",
+//   artist: "Patti Smith",
+//   duration: "5:56"
+// }
+// console.log(song);
+// This prints the object song to the console.
+// The output will look like:
+// css
+// Copy code
+// Song { name: 'Gloria', artist: 'Patti Smith', duration: '5:56' }
+// Summary:
+// The Song class defines a blueprint for creating song objects with name, artist, and duration properties.
+// The constructor method initializes these properties when a new song object is created.
+// The console.log statement prints the created song object to the console.
+// This code block demonstrates how to use classes in JavaScript to create and manage objects with specific properties.
+
+
 
 
 
