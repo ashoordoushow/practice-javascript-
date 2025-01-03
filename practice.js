@@ -818,17 +818,56 @@
 
 // 10 // Write a Plant class with attributes for name, size, and price.
 
-class Plant {
-  constructor(name, size, price) {
-    this.name = name;
-    this.size = size;
-    this.price = price;
-  }
-}
-var plant = new Plant("Sunflower", "Large", 20.00);
-console.log(plant);
+// class Plant {
+//   constructor(name, size, price) {
+//     this.name = name;
+//     this.size = size;
+//     this.price = price;
+//   }
+// }
+// var plant = new Plant("Sunflower", "Large", 20.00);
+// console.log(plant);
 
 // DELIBERATE PRATICE INTERMEDIATE LINK 1
 
 // 1 // Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
+
+// let firstName = "john"; // Or you can use "var" instead of let
+// let lastName = "doe";
+
+// console.log(firstName + " " + lastName);
+
+// 2 // Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the ${} operator).
+
+// var firstName = "john";
+// var lastName = "doe";
+
+// console.log(`${firstName}  ${lastName}`);   // for JavaScript it is always ${} when using string interpolation
+
+// 3 // Write a program that asks the user to input a word. If the word is "marco", print "polo".
+
+// let userInput = prompt("Please Enter A Word:"); // The prompt function won't work because it is a part of the browser environment, not the Node.js environment.
+// if (userInput === "marco") {
+//   console.log("polo");
+// }
+
+const readline = require("readline"); // 1st: Imports the readline module (synchronous)
+
+const rl = readline.createInterface({ // 2nd: Creates an interface for user input/output (synchronous)
+  input: process.stdin,              // Sets the input source to the terminal
+  output: process.stdout             // Sets the output to the terminal
+});
+
+rl.question("Please Enter A Word: ", (userInput) => { // 3rd: Asks a question, pauses for user input (asynchronous)
+  // Callback starts executing after user input:
+  if (userInput === "marco") {       // 4th: Checks if the user input is "marco" (synchronous)
+    console.log("polo");             // 5th: If true, logs "polo" to the console (synchronous)
+  } else {                           
+    console.log("You entered:", userInput); // 6th: If false, logs the user input (synchronous)
+  }
+  rl.close();                        // 7th: Closes the readline interface (synchronous)
+});                                  // Ends the rl.question method
+
+// 4 // Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+
 
