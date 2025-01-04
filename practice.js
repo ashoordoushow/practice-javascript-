@@ -851,23 +851,51 @@
 //   console.log("polo");
 // }
 
-const readline = require("readline"); // 1st: Imports the readline module (synchronous)
+// const readline = require("readline"); // 1st: Imports the readline module (synchronous)
 
-const rl = readline.createInterface({ // 2nd: Creates an interface for user input/output (synchronous)
-  input: process.stdin,              // Sets the input source to the terminal
-  output: process.stdout             // Sets the output to the terminal
-});
+// const rl = readline.createInterface({ // 2nd: Creates an interface for user input/output (synchronous)
+//   input: process.stdin,              // Sets the input source to the terminal
+//   output: process.stdout             // Sets the output to the terminal
+// });
 
-rl.question("Please Enter A Word: ", (userInput) => { // 3rd: Asks a question, pauses for user input (asynchronous)
-  // Callback starts executing after user input:
-  if (userInput === "marco") {       // 4th: Checks if the user input is "marco" (synchronous)
-    console.log("polo");             // 5th: If true, logs "polo" to the console (synchronous)
-  } else {                           
-    console.log("You entered:", userInput); // 6th: If false, logs the user input (synchronous)
-  }
-  rl.close();                        // 7th: Closes the readline interface (synchronous)
-});                                  // Ends the rl.question method
+// rl.question("Please Enter A Word: ", (userInput) => { // 3rd: Asks a question, pauses for user input (asynchronous)
+//   // Callback starts executing after user input:
+//   if (userInput === "marco") {       // 4th: Checks if the user input is "marco" (synchronous)
+//     console.log("polo");             // 5th: If true, logs "polo" to the console (synchronous)
+//   } else {                           
+//     console.log("You entered:", userInput); // 6th: If false, logs the user input (synchronous)
+//   }
+//   rl.close();                        // 7th: Closes the readline interface (synchronous)
+// });                                  // Ends the rl.question method
 
 // 4 // Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+
+// var color1 = "blue";
+// var color2 = "green";
+// var color3 = "yellow";
+// console.log("My favorite colors are "  + color1 + " " + color2 + " " + color3 + ".");
+
+// 5 // Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
+
+// var color1 = "blue";
+// var color2 = "green";
+// var color3 = "yellow";
+// console.log(`My favorite colors are ${color1} ${color2} ${color3}.`);
+
+// 6 // Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question("Please Enter a Name: ", (userInput) => {
+  if (userInput !== "Santa") {
+    console.log("You're not Santa");
+  }
+  rl.close();
+});
 
 
