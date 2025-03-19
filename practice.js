@@ -824,12 +824,23 @@
 
 // 9 // Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
 
-var password = window.prompt("Enter the password: ");
-if (password === "Joshua") {
-  console.log("Shall we play a game?");
-} else {
-  console.log("Access denied!");
-}
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question("Please Enter A Password: ", (userInput) => {
+  if (userInput === "Joshua") {
+    console.log("Shall we play a game?");
+  } else {
+    console.log("Access denied");
+  }
+  rl.close();
+});
+
+
 
 
 
