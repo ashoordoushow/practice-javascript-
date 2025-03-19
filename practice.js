@@ -2,162 +2,84 @@
 
 // // 1 // Write a program that uses a variable to store a number, then prints that number plus 10.
 
-// // var number = 2; //this is how you write a variable in javascript
-// // console.log(number + 10); //this is how you write the value of the variable plus an integer, 'console.log()' prints results in javascripts console
-
-// // var x = 300;
-// // console.log(x * 2);
+// let number = 23;
+// console.log(number + 10);
 
 // // 2 // Write a program that uses a variable to store a word, then prints that word with all capital letters.
 
-// var word = 'hello';
-// console.log(word.toUpperCase()); // this is the capital letters method used in javascript
-
-// var definition = 'chronological';
-// console.log(definition.toUpperCase());
+// var word = "Hello";
+// console.log(word.toUpperCase());
 
 // // 3 // Write a program that uses variables to store two numbers, then prints the numbers added together.
 
-// var x = 30;
-// var y = 23;
-// console.log(x + y);
+// var number1 = 23;
+// var number2 = 13;
+// console.log(number1 + number2);
 
 // // 4 // Write a program that uses a variable to store a word, then prints that word in reverse order.
 
-// console.log(word.split("").reverse().join(""));
-// console.log(word.split("").reverse().join(""));
-// console.log(word.split("").reverse().join(""));
+// var word = "because";
 // console.log(word.split("").reverse().join(""));
 
-// var word = "hello";
-// console.log(word.split("").reverse().join("")); // this is the 3 javascript methods you must add to print your word in reverse order
+// var word = "now";
+// console.log(word.split("").reverse().join(""));
 
 // // 5 // Write a program that uses a variable to store a number, then prints the number times 10.
 
-// var number = 2;
-// console.log(number * 10);
-
-// var x = 30;
-// console.log(x * 30);
-
-// var number = 2;
+// var number = 10;
 // console.log(number * 10);
 
 // // 6 // Write a program that uses variables to store two words, then prints both words on the same line in all capital letters.
 
-// var word1 = "proper";
-// var word2 = "very nice";
-// console.log(word1.toUpperCase() + " "  + word2.toUpperCase());
+// var word1 = "bye";
+// var word2 = "cool";
+// console.log(word1.toUpperCase() + word2.toUpperCase());
 
-// var definition1 = "google";
-// var definition2 = "is a very useful resource";
-// console.log(definition1.toUpperCase() + " " + definition2.toUpperCase());
 
 // // 7 // Write a program that uses a variable to store a word, then prints the number of letters in the word.
 
-// var word = "city";
+// var word = "hello";
 // console.log(word.length);
-
-// var word2 = "techincallity";
-// console.log(word2.length);
 
 // // 8 // Write a program that uses a variable to store a number with decimals, then prints the number as an integer.
 
-// var number = 3.6356;
+// var number = 3.12312;
 // console.log(parseInt(number));
 
-// var number3 = 4.9;
-// console.log(parseInt(number3)); // 'parseInt()' converts decimals to integers but always round down
+// var number = 4.892;
+// console.log(parseInt(number));
 
 // // 9 // Write a program that uses a variable to store two numbers, then prints the two numbers multiplied together.
 
-// var number1 = 23;
-// var number2 = 45;
+// var number1 = 32;
+// var number2 = 312;
 // console.log(number1 * number2);
+
 
 // // 10 // Write a program that uses a variable to store a word, then prints the word with all lowercase letters.
 
-// var word = "BECAUSE";
+// var word = "BUS";
 // console.log(word.toLowerCase());
-
-// var word1 = "BASKETBALL";
-// console.log(word1.toLowerCase());
-
-// var word2 = "MAGICIAN";
-// console.log(word2.toLowerCase());
-
-// var word3 = "JAVASCRIPT";
-// console.log(word3.toLocaleLowerCase());  // this is also another way of writing this function to print everything in lower case letters
 
 // // BASIC DELIBERATE PRACTICE LINK2
 
 // // 1 // Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.
 
-// var number = 46;
-// if (number === 10) {
-//   console.log(0);
-// } 
-// else {
-//   console.log(-1);
-// }
-
-// var number = 10;       // this is how you write 'if statements for javascript, apparently you need 3 '=' signs to set a variable equal to something in javascript + you use paranthesis and hashes when writing 'if statements'
-// if (number === 10) {
-//   console.log(0);
-// }
-// else {
-//   console.log(-1);
-// }
-
-// var number = 90;
-// if (number === 10) {
-//   console.log(0);
-// }
-// else {
-//   console.log(-1);
-// }
-
 // var number = 10;
 // if (number === 10) {
 //   console.log(0);
-// }
-// else {
+// } else {
 //   console.log(-1);
 // }
 
 // // 2 // Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10.
 
-// var number = 77
-// if (number < 10) {       
-//   console.log(-1);
-// }
-// else if (number > 10) {   // when writing 'elsif' in javascript must write it like this 'else if' (spaced)
-//   console.log(1);
-// }
-// else {
-//   console.log(0);
-// }                   // i think the hashes kind of represent the 'end' for javascript
-
-
 // var number = 10;
 // if (number < 10) {
 //   console.log(-1);
-// }
-// else if (number > 10) {
+// } else if (number > 10) {
 //   console.log(1);
-// }
-// else {
-//   console.log(0);
-// }
-
-// var number = 2
-// if (number < 10) {
-//   console.log(-1);
-// }
-// else if (number > 10) {
-//   console.log(1);
-// }
-// else {
+// } else {
 //   console.log(0);
 // }
 
@@ -308,15 +230,15 @@
 // var number = 1;
 // while (number <= 10) {
 //   console.log(number);
-//   number = number + 1;
+//   number += 1;
 // }
 
 // // 2 // Write a while loop that prints the word "hello" 5 times.
 
-// var number = 0;
-// while (number < 5) {
+// var number = 1;
+// while (number <= 5 ) {
 //   console.log("hello");
-//   number = number + 1;
+//   number += 1;
 // }
 
 // // 3 // Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
@@ -577,28 +499,10 @@
 
 // 1 // Write a method that takes in a number and returns the number times two. Then run the method and print the result.
 
-// function multiplyByTwo(number) {
+// function getDouble(number) {
 //   return number * 2;
 // }
-// console.log(multiplyByTwo(10));
-
-
-// - Function Declaration (function multiplyByTwo(number) { ... }):
-// function: This keyword declares a function.
-// multiplyByTwo: This is the name of the function.
-// (number): The function has a single parameter named number. This represents the input value that the function will use.
-// - return number * 2;: The function multiplies the input (number) by 2 and returns the result. The return keyword ensures that the value is sent back to the part of the code that called the function.
-// - Function Call (console.log(multiplyByTwo(10));):
-// multiplyByTwo(10): The function is called (or invoked) with the argument 10.
-// Here, 10 is passed to the number parameter of the function.
-// Inside the function, number is 10, so number * 2 evaluates to 20.
-// The function returns 20.
-// - console.log(...): This prints the result returned by the function (20) to the terminal or console.
-
-// function multiplyByTwo(number) {
-//   return number * 2;
-// }
-// console.log(multiplyByTwo(40));
+// console.log(getDouble(12));
 
 // 2 // Write a method that takes in a string and returns the string with all capital letters. Then run the method and print the result.
 
@@ -884,18 +788,59 @@
 
 // 6 // Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
 
-const readline = require("readline");
+// const readline = require("readline");
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
 
-rl.question("Please Enter a Name: ", (userInput) => {
-  if (userInput !== "Santa") {
-    console.log("You're not Santa");
-  }
-  rl.close();
-});
+// rl.question("Please Enter a Name: ", (userInput) => {
+//   if (userInput !== "Santa") {
+//     console.log("You're not Santa");
+//   }
+//   rl.close();
+// });
+
+
+// 7 // Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
+
+// var book = "million dollar strike";
+// var author = "Nancy";
+
+// console.log("The book is " + book + " and the author is " + author);
+
+// var book = "Hunger Games";
+// var author = "JBL";
+
+// console.log("The book name is " + book + " and the author is " + author);
+
+// 8 // Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
+
+// var bookTitle = "Sports Illistrated";
+// var author = "Steven A. Smith";
+
+// console.log(`The book name is ${bookTitle} and the author is ${author}!`);  // used backticks , ${} is called interpolation
+
+// 9 // Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
+
+var password = window.prompt("Enter the password: ");
+if (password === "Joshua") {
+  console.log("Shall we play a game?");
+} else {
+  console.log("Access denied!");
+}
+
+
+
+// 10 // Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
+
+// var cityOne = "Chicago";
+// var cityTwo = "Miami";
+// var cityThree = "Jacksonville";
+
+// console.log("I went on a roadtrip and visited " + cityOne + ", " + cityTwo + ", and " + cityThree);
+
+
 
 
