@@ -192,3 +192,38 @@
 
 // 2 // Write a while loop that prints the word "hello" 5 times.
 
+// let number = 0;
+
+// while (number < 5) {
+//   console.log("hello");
+//   number += 1;
+// }
+
+// 3 // Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
+
+const readline = require("readline"); // declaring a variable, and initiallizing it by importing a module, by using the require() built-in function.
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+function askQuestion(query) {
+  return new Promise(resolve => rl.question(query, resolve));
+}
+
+(async () => {
+  let userInput = "";
+
+  while (userInput !== "stop") {
+    userInput = (await askQuestion("Please Enter A Word: ")).toLowerCase();
+
+    if (userInput === "stop") {
+      console.log("Program Terminated!");
+      rl.close();
+    }
+  }
+})();
+
+
+
