@@ -201,29 +201,118 @@
 
 // 3 // Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
 
-const readline = require("readline"); // declaring a variable, and initiallizing it by importing a module, by using the require() built-in function.
+// const { resolve } = require("path");
+// const readline = require("readline"); // declaring a variable, and initiallizing it by importing a module, by using the require() built-in function.
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+// const rl = readline.createInterface({ // const rl purpose is to store the result of calling a method on the readline object
+//   input: process.stdin,           // input and out code/ process.stdin, and process.stdout are built-in node objects that do not require imports & 
+//   output: process.stdout,         // allow the program to recieve user input from the terminal, and print messages/prompts to the terminal
+// });
 
-function askQuestion(query) {
-  return new Promise(resolve => rl.question(query, resolve));
-}
+// function askQuestion(query) {                           //this code defines a function called askQuestion(), which asks a question to user in terminal,
+//   return new Promise(resolve => rl.question(query, resolve)); //  waits for the user to type a response in terminal and press enter.
+// }                                       // Return that user response as a Promise, making it possible to use async/await to handle the response.
 
-(async () => {
-  let userInput = "";
+// (async () => {             // async () => { ... } (); <--- this is a Asynchronous Function & in this case the Main structure of lines 215-226
+//   let userInput = "";
 
-  while (userInput !== "stop") {
-    userInput = (await askQuestion("Please Enter A Word: ")).toLowerCase();
+//   while (userInput !== "stop") {          // while loop
+//     userInput = (await askQuestion("Please Enter A Word: ")).toLowerCase();
 
-    if (userInput === "stop") {
-      console.log("Program Terminated!");
-      rl.close();
-    }
-  }
-})();
+//     if (userInput === "stop") {         // conditinal statement inside while loop
+//       console.log("Program Terminated!"); 
+//       rl.close(); // this is a method provided by the realine module in Node.js used to close the readline interface.
+//     }
+//   }
+// })();
+
+// const { resolve } = require("path");
+// const readline = require("readline");
+
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+// function askQuestion(query) {
+//   return new Promise(resolve => rl.question(query, resolve));
+// }
+
+// (async () => {
+//   let userInput = "";
+
+//   while (userInput !== "stop") {
+//     userInput = await(askQuestion("Please Enter A Word: "));
+  
+//     if (userInput === "stop") {
+//       console.log("Program Terminated!");
+//       rl.close();
+//     }
+//   }
+// })();
+
+// 4 // Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
+
+// let number = 0;
+
+// while (number <= 100) {
+//   console.log(number);
+//   number += 5;
+// }
+
+// 5 // Write a while loop that prints the number 9000 ten times.
+
+// let number = 0;
+
+// while (number < 10) {
+//   console.log(9000);
+//   number += 1;
+// }
+
+// 6 // Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
+
+// const readline = require("readline");
+
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+// function askQuestion(query) {
+//   return new Promise(resolve => rl.question(query, resolve));
+// }
+
+// (async () => {
+//   let userInput = NaN; // NaN represents an integer response from the user
+
+//   while (userInput <= 10 || isNaN(userInput)) {
+//     userInput = await askQuestion("Please Enter A Number: ");
+//     userInput = Number(userInput);
+
+//     if (userInput > 10 && !isNaN(userInput)) {
+//       console.log("Program Passed!");
+//       rl.close();
+//     }
+//   }
+// })();
+
+// 7 // Write a while loop that prints the numbers 50 to 70.
+
+// let number = 50;
+
+// while (number <= 70) {
+//   console.log(number);
+//   number += 1;
+// }
+
+// 8 // Write a while loop that prints the phrase "Around the world" 144 times.
+
+// let number = 0;
+
+// while (number < 144) {
+//   console.log("Around the world");
+//   number += 1;
+// }
 
 
 
