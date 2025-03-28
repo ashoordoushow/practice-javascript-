@@ -315,4 +315,31 @@
 // }
 
 
+// 9 // Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
+
+const { resolve } = require("path");
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+function askQuestion(query) {
+  return new Promise(resolve => rl.question(query, resolve));
+}
+
+(async () => {
+  let userInput = "";
+
+  while (userInput.length <= 5) {
+    userInput = await askQuestion("Please Enter A Word!: ");
+
+    if (userInput.length > 5) {
+      console.log("Program Terminated!");
+      rl.close();
+    }
+  } 
+})();
+
 
