@@ -1,11 +1,84 @@
 // 1 // Write a program that uses a variable to store a number, then prints that number plus 10.
 
+// var number = 2;
+// console.log(number + 2);
+
+// 2 // Write a program that uses a variable to store a word, then prints that word with all capital letters
+
+// var word = "hello";
+// console.log(word.toUpperCase());
+
+// 3 //Write a program that uses variables to store two numbers, then prints the numbers added together.
+
+// let number1 = 23;
+// let number2 = 12;
+
+// console.log(number1 + number2);
+
+
+//4 // Write a program that uses a variable to store a word, then prints that word in reverse order.
+
+// let word = "GrandPraireTransit";
+
+// console.log(word.split("").reverse("").join(""));
+
+// 5 // Write a program that uses a variable to store a number, then prints the number times 10.
+
+let number = 400;
+
+if number( ) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 1 // Write a program that uses a variable to store a number, then prints that number plus 10.
+
 // var number = 23;
 // console.log(number + 10);
 
 // 2 // Write a program that uses a variable to store a word, then prints that word with all capital letters.
 
 // var word = "Basketball";
+// console.log(word.toUpperCase());
+
+// let word = "hello";
 // console.log(word.toUpperCase());
 
 // 3 // Write a program that uses variables to store two numbers, then prints the numbers added together.
@@ -98,6 +171,15 @@
 // 4 // Use a variable to store a number, then write a condition that prints 1 if the number is over 9000, and prints -1 otherwise. 
 
 // let number = 12;
+
+// if (number > 9000) {
+//   console.log(1);
+// } else {
+//   console.log(-1);
+// }
+
+
+// let number = 23;
 
 // if (number > 9000) {
 //   console.log(1);
@@ -317,29 +399,29 @@
 
 // 9 // Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
 
-const { resolve } = require("path");
-const readline = require("readline");
+// const { resolve } = require("path");
+// const readline = require("readline");
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
 
-function askQuestion(query) {
-  return new Promise(resolve => rl.question(query, resolve));
-}
+// function askQuestion(query) {
+//   return new Promise(resolve => rl.question(query, resolve));
+// }
 
-(async () => {
-  let userInput = "";
+// (async () => {
+//   let userInput = "";
 
-  while (userInput.length <= 5) {
-    userInput = await askQuestion("Please Enter A Word!: ");
+//   while (userInput.length <= 5) {
+//     userInput = await askQuestion("Please Enter A Word!: ");
 
-    if (userInput.length > 5) {
-      console.log("Program Terminated!");
-      rl.close();
-    }
-  } 
-})();
+//     if (userInput.length > 5) {
+//       console.log("Program Terminated!");
+//       rl.close();
+//     }
+//   } 
+// })();
 
 
