@@ -24,9 +24,46 @@
 
 // 5 // Write a program that uses a variable to store a number, then prints the number times 10.
 
-let number = 400;
+// let number = 400;
 
-if number( ) {}
+// console.log(number * 10);
+
+// 6 // Write a program that uses variables to store two words, then prints both words on the same line in all capital letters.
+
+// let word1 = "Happy";
+// let word2 = "Sad";
+
+// console.log(word1.toUpperCase() + " " + word2.toUpperCase());
+
+// 7 // Write a program that uses a variable to store a word, then prints the number of letters in the word.
+
+// let word = "VsCode";
+
+// console.log(word.length);
+
+// Basic Link 2
+
+// 1 // Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.
+
+// let number = 10;
+
+// if (number === 10) {  // always use === intead of == because with == type conversion is allowed meaning javascript will convert some orginal values so it is allowed to compare them.
+//   console.log(0);
+// } else {
+//   console.log(-1);
+// }
+
+// 2 // Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10.
+
+// let number = 143294023;
+
+// if (number < 10) {
+//   console.log(-1);
+// } else if (number > 10) {
+//   console.log(1);
+// } else {
+//   console.log(0);
+// }
 
 
 
