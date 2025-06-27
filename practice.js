@@ -185,3 +185,63 @@
 // } else {
 //   console.log(1);
 // }
+
+// BASIC - LINK3 - Write a loop which modifies a variable each time the loop runs
+
+// Ex. for Loop
+
+// for (let i = 0; i < 5; i++) {
+//   console.log("Hello");
+// } // Prints "Hello" 5 times
+
+// 1 // Write a while loop to print the numbers 1 through 10.
+
+// let x = 0;
+
+// while (x < 10) {
+//   x++;
+//   console.log(x);
+// }
+
+// 2 // Write a while loop that prints the word "hello" 5 times.
+
+// let x = 0;
+
+// while (x < 5) {
+//   x++;
+//   console.log("hello");
+// }
+
+// 3 // Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
+
+// let enterWord = prompt(); {    // <-- reason for error in terminal because prompt() function only works in browser not VScode or Node.js SO TRY AGAIN BELOW
+//   console.log("Please Enter A Word");
+// }
+
+// while (enterWord !== "stop") {
+//   console.log("Try Again!");
+// } if (enterWord === "stop") {
+//   console.log("Congratulations");
+// }
+
+// const readline = require("readline");  // so this readline/ code block is incorrect too becuse readline doesn't work well with while loops since it's async which is doesn't wait the async function like rl.question() to finsh TRY AGAIN BELOW
+
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+// function askWord() {
+//   rl.question("Please Enter A Word: ", (word) => {
+//     while (word !== "stop") {
+//       console.log("Try Again");
+//       rl.close();
+//     } if (word === "stop") {
+//       console.log("Congratulations");
+//     }
+//   });
+// }
+
+// askWord();
+
+// WHEN YOU COME BACK TO THIS YOU WILL NEED TO USE READLINE-SYNC MODULE!
