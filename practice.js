@@ -244,4 +244,19 @@
 
 // askWord();
 
-// WHEN YOU COME BACK TO THIS YOU WILL NEED TO USE READLINE-SYNC MODULE!
+// Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
+
+const readlineSync = require("readline-sync");
+
+let word = "";
+
+while (word !== "stop") {
+  word = readlineSync.question("Please Enter A Word: ");
+  if (word !== "stop") {
+    console.log("Try Again");
+  } else {
+    console.log('Congratulations');
+  }
+}
+
+  
