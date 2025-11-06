@@ -16,69 +16,290 @@
       document.write(`<span style="color: green">${text}</span><br>`);
     }
     
-    green("<b>Basic Level Link 1</b>" + "<br>" + "1. Write a program that uses a variable to store a number, then prints that number plus 10." + "<br><br>" )
+    green("<b>Basic Level Link 1</b>" + "<br>" + "1. Write a program that uses a variable to store a number, then prints that number plus 10." + "<br>" )
 {
     let number = 23;
 document.write(number + 10 + "<br><br>");
 }
 
 
-green("2. Write a program that uses a variable to store a word, then prints that word with all capital letters." + "<br><br>" )
+green("2. Write a program that uses a variable to store a word, then prints that word with all capital letters." + "<br>" )
 {
 let word = "Basketball";
 document.write(word.toUpperCase() + "<br><br>" );
 }
 
-green("3. Write a program that uses variables to store two numbers, then prints the numbers added together." + "<br><br>" )
+green("3. Write a program that uses variables to store two numbers, then prints the numbers added together." + "<br>" )
 {
 let number1 = 10;
 let number2 = 13;
 document.write(number1 + number2 + "<br><br>");
 }
 
-green("4. Write a program that uses a variable to store a word, then prints that word in reverse order." + "<br><br>" )
+green("4. Write a program that uses a variable to store a word, then prints that word in reverse order." + "<br>" )
 {
 let word = "hello";
 document.write(word.split("").reverse().join("") + "<br><br>");
 }
 
-green("5. Write a program that uses a variable to store a number, then prints the number times 10." + "<br><br>" )
+green("5. Write a program that uses a variable to store a number, then prints the number times 10." + "<br>" )
 {
 let number = 10;
 document.write(number * 10 + "<br><br>");
 }
 
 
-green("6. Write a program that uses variables to store two words, then prints both words on the same line in all capital letters." + "<br><br>" )
+green("6. Write a program that uses variables to store two words, then prints both words on the same line in all capital letters." + "<br>" )
 {
 let word1 = "hello";
 let word2 = "goodbye";
 document.write(word1.toUpperCase() + " " + word2.toUpperCase() + "<br><br>");
 }
 
-green("7. Write a program that uses a variable to store a word, then prints the number of letters in the word." + "<br><br>" )
+green("7. Write a program that uses a variable to store a word, then prints the number of letters in the word." + "<br>" )
 {
 let word = "notebook";
 document.write(word.length + "<br><br>");
 }
 
-green("8. Write a program that uses a variable to store a number with decimals, then prints the number as an integer." + "<br><br>" )
+green("8. Write a program that uses a variable to store a number with decimals, then prints the number as an integer." + "<br>" )
 {
 let number = 1.73;
 document.write(Math.round(number) + "<br><br>");
 }
 
-green("9. Write a program that uses a variable to store two numbers, then prints the two numbers multiplied together." + "<br><br>" )
+green("9. Write a program that uses a variable to store two numbers, then prints the two numbers multiplied together." + "<br>" )
 {
 let number1 = 35;
 let number2 = 11;
 document.write(number1 * number2 + "<br><br>");
 }
 
-green("10. Write a program that uses a variable to store a word, then prints the word with all lowercase letters." + "<br><br>" )
+green("10. Write a program that uses a variable to store a word, then prints the word with all lowercase letters." + "<br>" )
+{
+  let word = "Coffee";
+  document.write(word.toLocaleLowerCase() + "<br><br>");
+}
 
+green("<b>Basic Level Link 2</b>" + "<br>" + "1. Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise." + "<br>")
+{
+  document.write(`<pre>
+    let number = 23;
+  if (number === 10) {
+    document.write(0);
+  } else {
+    document.write(-1  + "<br><br>");
+  }
+    </pre>`);
 
+  let number = 23;
+  if (number === 10) {
+    document.write(0);
+  } else {
+    document.write("Output:" + " " + -1  + "<br><br>");
+  }
+}
 
+green("2. Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10." + "<br>")
+{
+  document.write(`<pre>let number = 56;
+  if (number < 10) {
+    document.write(-1);
+  } else if(number > 10) {
+    document.write(1 + "<br><br>");
+  } else {
+    document.write(0);
+  }</pre>`)
+
+  let number = 56;
+  if (number < 10) {
+    document.write(-1);
+  } else if (number > 10) {
+    document.write("Output:" + " " + 1 + "<br><br>");
+  } else {
+    document.write(0);
+  }
+}
+
+green("3. Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise." + "<br>")
+{
+  document.write(`<pre>let number1 = 12;
+let number2 = 15;
+if (number1 && number2 < 10) {
+  document.write(1);
+} else {
+  document.write("Output:" + " " + 0 + "<br><br>");
+}</pre>`)
+
+let number1 = 12;
+let number2 = 15;
+if (number1 && number2 < 10) {
+  document.write(1);
+} else {
+  document.write("Output:" + " " + 0 + "<br><br>");
+}
+}
+   
+
+green("4. Use a variable to store a number, then write a condition that prints 1 if the number is over 9000, and prints -1 otherwise." + "<br>")
+{
+  document.write(`<pre>let number = 12;
+  if (number > 9000) {
+    document.write(1);
+  } else {
+    document.write("Output:" + " " + -1 + "<br><br>");
+  }</pre>`);
+
+  let number = 12;
+  if (number > 9000) {
+    document.write(1);
+  } else {
+    document.write("Output:" + " " + -1 + "<br><br>");
+  }
+}
+
+    
+
+green("5. Use a variable to store a number, then write a condition that prints 9 if the number is less than 10, prints 19 if the number is less than 20, prints 29 if the number is less than 30, and prints -1 otherwise (only one print statement should occur)." + "<br>")
+{
+  document.write(`<pre>let number = 2342;
+  if (number < 10) {
+    document.write(9);
+  } else if (number < 20) {
+    document.write(19);
+  } else if (number < 30) {
+    document.write(29);
+  } else {
+    document.write("Output:" + " " + -1 + "<br><br>");
+  }</pre>`);
+
+  let number = 2342;
+  if (number < 10) {
+    document.write(9);
+  } else if (number < 20) {
+    document.write(19);
+  } else if (number < 30) {
+    document.write(29);
+  } else {
+    document.write("Output:" + " " + -1 + "<br><br>");
+  }
+}
+
+    
+
+green("6. Use variables to store two numbers, then write a condition that prints 100 if either number is greater than 10, and prints -100 otherwise." + "<br>")
+{
+  document.write(`<pre>
+  let number1 = 4;
+  let number2 = 7;
+  if (number1 > 10 || number2 > 10) {
+    document.write(100);
+  } else {
+    document.write("Output:" + " " + -100 + "<br><br>");
+  }</pre>`);
+
+  let number1 = 4;
+  let number2 = 7;
+  if (number1 > 10 || number2 > 10) {
+    document.write(100);
+  } else {
+    document.write("Output:" + " " + -100 + "<br><br>");
+  }
+}
+
+    
+green("7. Use a variable to store a number, then write a condition that prints 1776 if the number is less than 0, and prints 1979 otherwise." + "<br>")
+  {
+    document.write(`<pre>
+      let number = 89;
+    if (number < 0) {
+      document.write(1776);
+    } else {
+      document.write("Output:" + " " + 1979 + "<br><br>");
+    }</pre>`);
+
+    let number = 89;
+    if (number < 0) {
+      document.write(1776);
+    } else {
+      document.write("Output:" + " " + 1979 + "<br><br>");
+    }
+  }
+
+    
+green("8. Use a variable to store a number, then write a condition that prints 100 if the number equals 100, prints 99 if the number is equal to 99, and prints 0 otherwise." + "<br>")
+{
+  document.write(`<pre>
+    let number = 77;
+  if (number === 100) {
+    document.write(100);
+  } else if (number === 99) {
+    document.write(99);
+  } else {
+    document.write("Output:" + " " + 0 + "<br><br>");
+  }</pre>`);
+
+  let number = 77;
+  if (number === 100) {
+    document.write(100);
+  } else if (number === 99) {
+    document.write(99);
+  } else {
+    document.write("Output:" + " " + 0 + "<br><br>");
+  }
+}
+
+    
+green("9. Use variables to store two numbers, then write a condition that prints 1 if the first number is less than zero and the second number is greater than 0, and prints 0 otherwise." + "<br>")
+{
+  document.write(`<pre>
+  let number1 = 90;
+  let number2 = 40;
+  if (number1 < 0 && number2 > 0) {
+    document.write(1);
+  } else {
+    document.write("Output:" + " " + 0 + "<br><br>");
+  }</pre>`);
+
+  let number1 = 90;
+  let number2 = 40;
+  if (number1 < 0 && number2 > 0) {
+    document.write(1);
+  } else {
+    document.write("Output:" + " " + 0 + "<br><br>");
+  }
+}
+
+    
+green("10. Use a variable to store a number, then write a condition that prints 5 if the number is greater than 80, prints 4 if the number is greater than 60, prints 3 if the number is greater than 40, prints 2 if the number is greater than 20, and prints 1 otherwise (only one print statement should occur)." + "<br>")
+{
+  document.write(`<pre>
+  let number = 78;
+  if (number > 80) {
+    document.write(5);
+  } else if (number > 60) {
+    document.write("Output:" + " " + 4 + "<br><br>");
+  } else if (number > 40) {
+    document.write(3);
+  } else if (number > 20) {
+    document.write(2)
+  } else {
+    document.write(1);
+  }</pre>`);
+  
+  let number = 78;
+  if (number > 80) {
+    document.write(5);
+  } else if (number > 60) {
+    document.write("Output:" + " " + 4 + "<br><br>");
+  } else if (number > 40) {
+    document.write(3);
+  } else if (number > 20) {
+    document.write(2)
+  } else {
+    document.write(1);
+  }
+}
 </script>
 </body>
 </html>
