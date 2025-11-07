@@ -286,7 +286,7 @@ green("10. Use a variable to store a number, then write a condition that prints 
   } else {
     document.write(1);
   }</pre>`);
-  
+
   let number = 78;
   if (number > 80) {
     document.write(5);
@@ -300,6 +300,233 @@ green("10. Use a variable to store a number, then write a condition that prints 
     document.write(1);
   }
 }
+
+green("<b>Basic Level Link 3</b>" + "<br>" +  "1. Write a while loop to print the numbers 1 through 10." + "<br>");
+{
+  document.write(`<pre>
+    let number = 1;
+  document.write("Output:" + "<br>")
+  while (number <= 10) {
+    document.write(number + "<br>");
+    number++;
+  }</pre>`);
+
+  let number = 1;
+  document.write("Output:" + "<br>")
+  while (number <= 10) {
+    document.write(number + "<br>");
+    number++;
+  }
+}
+
+    
+green("2. Write a while loop that prints the word 'hello' 5 times." + "<br>");
+{
+  document.write(`<pre>
+  let x = 0;
+  document.write("Output:" + "<br>");
+  while (x < 5) {
+    document.write("hello" + "<br>");
+    x++
+  }</pre>`);
+
+  let x = 0;
+  document.write("Output:" + "<br>");
+  while (x < 5) {
+    document.write("hello" + "<br>");
+    x++
+  }
+}
+
+
+green("3. Write a while loop that asks the user to enter a word and will run forever until the user enters the word 'stop'." + "<br>");
+{
+  // A traditional while loop cannot wait for real-time user input on a web page!!! So you cannot answer this question using a while loop!.
+  // Skip for now, and answer this question later using a conditional statement!
+// function userInput() {
+//   const input = document.createElement("input");
+//   input.type = "text";
+//   input.placeholder = "Please Enter A Word: "          <--- what you can do is complete this outputted result in your CONSOLE!
+
+//   const button = document.createElement("button")
+//   button.textContent = "Submit"
+
+//   const output = document.createElement("p");
+
+//   document.body.appendChild(input);
+//   document.body.appendChild(button);
+//   document.body.appendChild(output);
+
+//   button.addEventListener("click", function () {
+//     const value = input.value
+//   })
+
+//   while (value !== "stop") {
+//     out.textContent = "Try Again!";
+//   } 
+//   if (value === "stop") {
+//     output.textContent =  "That is the correct word!";
+//   }
+// }
+// userInput();
+
+  // while (usersInput === "stop") {
+  //   document.write("That is the correct word");
+  //   if (usersInput !== "stop") {
+  //     document.write(usersInput);
+  //   }
+  // }
+}
+
+    
+
+green("4. Write a while loop that prints the numbers 0 through 100, increasing by 5 each time." + "<br>");
+{
+  document.write(`<pre>
+  let x = 0;
+  while (x <= 100) {
+    document.write(x + "<br>");
+    x = x + 5;
+  }</pre>`);
+
+  let x = 0;
+  while (x <= 100) {
+    document.write(x + "<br>");
+    x = x + 5;
+  }
+}
+
+
+green("5. Write a while loop that prints the number 9000 ten times." + "<br>");
+{
+  document.write(`<pre>
+    let number = 0;
+    while (number < 10) {
+      document.write(9000 + "<br>");
+      number++;
+  }</pre>`)
+  let number = 0;
+  while (number < 10) {
+    document.write(9000 + "<br>");
+    number++;
+  }
+}
+
+  
+green("6. Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10." + "<br>");
+{
+  document.write(`<pre>
+    function askUserNumber() {
+    while (true) {
+    let input = prompt("Enter A Number: ");
+    if (input > 10) {
+      alert("You have entered a number greater than 10!");
+      break;
+    }
+  }
+  
+  // askUserNumber();  <-- code works when you UNCOMMENT this!
+
+  }
+    
+  Ouput: "You have entered a number greater than 10!" <-- if entered a number greater than 10 </pre>`)
+  function askUserNumber() {
+  while (true) {
+    let input = prompt("Enter A Number: ");
+    if (input > 10) {
+      alert("You have entered a number greater than 10!");
+      break;
+    }
+  }
+}
+
+// askUserNumber();  <-- code works when you UNCOMMENT this! 
+}
+
+   
+green("7. Write a while loop that prints the numbers 50 to 70." + "<br>");
+{
+  document.write(`<pre>
+  let number = 50;
+  while (number <= 70) {
+    document.write(number + "<br>");
+    number++;
+  }</pre>`)
+
+  document.write("Output:" + "<br>");
+  let number = 50;
+  while (number <= 70) {
+    document.write(number + "<br>");
+    number++;
+  }
+}
+
+    
+green("8. Write a while loop that prints the phrase 'Around the world' 144 times." + "<br>");
+{
+  document.write(`<pre>
+  let x = 0;
+  while (x < 144) {
+    document.write("Around the world" + "<br>");
+    x++;
+  }<pre>`)
+
+  document.write("Output:" + "<br>");
+  let x = 0;
+  while (x < 144) {
+    document.write("Around the world" + "<br>");
+    x++;
+  }
+}
+
+    
+green("9. Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters." + "<br>");
+{
+  document.write(`<pre>
+  function askUserWord() {
+  while (true) {
+    input = prompt("Enter A Word: ");
+    if (input.length > 5) {
+      alert("You have entered a word that is more than 5 letters long!");
+      break;
+    }
+  }
+}
+
+// askUserWord(); <-- UNCOMMENT THIS TO CALL FUNCTION -> WHICH RUNS WHILE LOOP!</pre>`)
+  function askUserWord() {
+  while (true) {
+    input = prompt("Enter A Word: ");
+    if (input.length > 5) {
+      alert("You have entered a word that is more than 5 letters long!");
+      break;
+    }
+  }
+}
+
+// askUserWord(); <-- UNCOMMENT THIS TO CALL FUNCTION -> WHICH RUNS WHILE LOOP!
+}
+
+    
+
+green("10. Write a while loop that prints the even numbers from 2 to 40." + "<br>");
+{
+  document.write(`<pre>
+  let x = 2;
+  while (x <= 40) {
+    document.write(x + "<br>");
+    x = x + 2;
+}</pre>`);
+
+document.write("Output:" + "<br>");
+let x = 2;
+while (x <= 40) {
+  document.write(x + "<br>");
+  x = x + 2;
+}
+}
+    
+
 </script>
 </body>
 </html>
