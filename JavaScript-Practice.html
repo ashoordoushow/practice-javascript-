@@ -525,6 +525,174 @@ while (x <= 40) {
   x = x + 2;
 }
 }
+
+green("<b>Basic Level Link 4</b><br>" + "1. Create an array to store 3 words. Then add two more words to the array and print the array on one line." + "<br>");
+{
+document.write(`<pre>
+const words = ["apple", "orange", "peach"];
+words.push("grape");
+words.push("mango");
+
+document.write(words + "<br><br>");</pre>`);
+
+document.write("Output:" + "<br>");
+const words = ["apple", "orange", "peach"];
+words.push("grape");
+words.push("mango");
+
+document.write(words + "<br><br>");
+}
+
+green("2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line." + "<br>");
+{
+  document.write(`<pre>
+  const letters = ["a", "b", "c", "d"];
+  letters[1] = 23;
+  document.write(letters);</pre>`);
+
+  document.write("Output:" + "<br>");
+  const letters = ["a", "b", "c", "d"];
+  letters[1] = 23;
+  document.write(letters + "<br><br>");
+}
+
+green("3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop." + "<br>");
+{
+document.write(`<pre>
+const numbers = [2, 23, 42, 123, 1];
+let x = 0;
+
+while (x < numbers.length) {
+  document.write(numbers[x] + "<br>");
+  x++;
+}</pre>`);
+
+document.write("Output:" + "<br>");
+const numbers = [2, 23, 42, 123, 1];
+let x = 0;
+
+while (x < numbers.length) {
+  document.write(numbers[x] + "<br>");
+  x++;
+}
+}
+
+green("4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line." + "<br>");
+{
+  document.write(`<pre>const number = [1];
+  number.push(12);
+  number.push(21);
+  number.push(1123);
+  document.write(number);</pre>`);
+
+  document.write("Output:" + "<br>");
+  const number = [1];
+  number.push(12);
+  number.push(21);
+  number.push(1123);
+  document.write(number + "<br><br>");
+}
+
+green("5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line." + "<br>");
+{
+  document.write(`<pre>
+  const strings = ["hello", "goodbye", "goodmorning"];
+
+  strings[2] = strings[2].toUpperCase();  
+  document.write(strings + "<br><br>");</pre>`);
+
+document.write("Output:" + "<br>");
+const strings = ["hello", "goodbye", "goodmorning"];
+
+strings[2] = strings[2].toUpperCase();  // .toUpperCase() doesn't change a string directly. It just returns a new one in all upper case letters.
+document.write(strings + "<br><br>");
+}
+
+green("6. Create an array to store 3 names. Then print out each name on separate lines with a while loop." + "<br>");
+{
+document.write(`<pre>
+const names = ["jordan", "phillip", "clancy"];
+let x = 0;
+
+while (x < names.length) {
+  document.write(names[x] + "<br>");
+  x++;
+}</pre>`);
+
+document.write("Output:" + "<br>")
+const names = ["jordan", "phillip", "clancy"];
+let x = 0;
+
+while (x < names.length) {
+  document.write(names[x] + "<br>");
+  x++;
+}
+}
+
+green("7. Create an array to store 2 strings. Then add one string to the array and print the array on one line." + "<br>");
+{
+  document.write(`<pre>
+const strings = ["string1", "string2"];
+
+strings.push("string3");
+document.write(strings + "<br><br>");</pre>`);
+
+document.write("Ouput:" + "<br>")
+const strings = ["string1", "string2"];
+
+strings.push("string3");
+document.write(strings + "<br><br>");
+}
+green("8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line." + "<br>");
+{
+  document.write(`<pre>
+  const numbers = [90, 232, 34, 42, 32];
+
+  numbers[0] = numbers[0] * 10;
+  document.write(numbers + "<br><br>");</pre>`);
+
+  document.write("Output:" + "<br>");
+  const numbers = [90, 232, 34, 42, 32];
+
+  numbers[0] = numbers[0] * 10;
+  document.write(numbers + "<br><br>");
+}
+
+green("9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop." + "<br>");
+{
+  document.write(`<pre>
+  const numbers = [3, 93];
+  let x = 0;
+
+  while (x < numbers.length) {
+    document.write(numbers[x] + "<br>");
+    x++;
+  }</pre>`);
+
+  document.write("Output:" + "<br>");
+  const numbers = [3, 93];
+  let x = 0;
+
+  while (x < numbers.length) {
+    document.write(numbers[x] + "<br>");
+    x++;
+  }
+}
+green("10. Create an array to store names of 3 different countries. Then add one more country and print the array one line." + "<br>");
+{
+  document.write(`<pre>
+  const countries = ["United States", "Russia", "France"];
+
+  countries.push("Germany");
+  document.write(countries);</pre>`);
+
+  document.write("Output:" + "<br>");
+  const countries = ["United States", "Russia", "France"];
+
+  countries.push("Germany");
+  document.write(countries);
+
+}
     
 
 </script>
