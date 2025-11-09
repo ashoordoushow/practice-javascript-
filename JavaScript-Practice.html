@@ -690,11 +690,304 @@ green("10. Create an array to store names of 3 different countries. Then add one
   const countries = ["United States", "Russia", "France"];
 
   countries.push("Germany");
-  document.write(countries);
-
+  document.write(countries + "<br><br>");
 }
-    
 
+green("<b>Basic Level Link 5</b><br>" + "1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines." + "<br>");
+{
+  const person = {
+    fname: "paul",
+    lname: "ocho",
+    email: "paulO@gmail.com"
+  }
+  document.write(person.fname + "<br>");
+  document.write(person.lname + "<br>");
+  document.write(person.email + "<br><br>");
+}
+
+green("2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info." + "<br>");
+{
+  document.write(`<pre>
+    const people = [             
+    {                         
+      fname: "pauly",         
+      lname: "michael"        
+    },
+    {
+      fname: "clooney",               
+      lname: "sam"
+    },
+    {
+      fname: "harry",
+      lname: "potter"
+    }
+  ];
+
+  document.write(people[0].fname + " ");    / <-- You can either call the property this way '.fname'
+  document.write(people[0]["lname"] + "<br><br>");  // <-- OR this way ["lname"]
+  </pre>`);
+  
+  const people = [             // <-- people is an array of objects. ({} objects) <-- these are elements in the array aka objects 
+    {                         // {} <-- and inside the objects(elements of the array), are properties(key value pairs) / aka values of the object.
+      fname: "pauly",         // In JavaScript {} is officially just called an object - (though conceptually, it behaves like a hash under the hood.)
+      lname: "michael"        // the term hash IS NOT used in JavaScript. It is for Ruby or Python term, where they're called hashes or dictionaries
+    },
+    {
+      fname: "clooney",               
+      lname: "sam"
+    },
+    {
+      fname: "harry",
+      lname: "potter"
+    }
+  ];
+  document.write("Output:" + "<br>");
+  document.write(people[0].fname + " ");          // <-- You can either call the property this way '.fname'
+  document.write(people[0]["lname"] + "<br><br>");    // <-- OR this way ["lname"]
+}
+
+green("3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result." + "<br>");
+{
+document.write(`<pre>
+  const menuItems = {
+  hamburger: 6.00,
+  fries: 2.00,
+  hotdog: 4.00
+}
+
+menuItems["smoothie"] = "$3.00"        //  <-- you can add a key value pair like this
+// menuItems.smoothie = 3.00        // <-- OR like this
+
+for (const [key, value] of Object.entries(menuItems)) {
+  document.write(key + ":" + value + "<br><br>");
+}</pre>`);
+
+document.write("Output:" + "<br>");
+const menuItems = {
+  hamburger: "$6.00",
+  fries: "$2.00",
+  hotdog: "$4.00"
+};
+
+menuItems["smoothie"] = "$3.00"        //  <-- you can add a key value pair like this
+// menuItems.smoothie = 3.00        // <-- OR like this
+
+for (const [key, value] of Object.entries(menuItems)) {
+  document.write(key + ":" + value + "<br><br>");
+}
+// for (exp 1; exp 2; exp 3) {         <-- for loop representation; exp1 sets a variable, then exp2 defines the condition, exp3 runs after the code block has been executed all the way through.
+//   // code block to be executed
+// }
+}
+
+green("4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines." + "<br>");
+{
+  document.write(`<pre>
+  const book = {
+    title: "Bible",
+    author: "Jesus Christ",
+    number_of_pages: 1455,
+    language: "Aremaic"
+  };
+  for (const [key, value] of Object.entries(book)) {
+    document.write(key + ":" + value + "<br><br>");
+  }</pre>`);
+  document.write("Output:" + "<br>");
+  const book = {
+    title: "Bible",
+    author: "Jesus Christ",
+    number_of_pages: 1455,
+    language: "Aremaic"
+  };
+  for (const [key, value] of Object.entries(book)) {
+    document.write(key + ":" + value + "<br><br>");
+  }
+}
+
+green("5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author." + "<br>");
+{
+  document.write(`<pre>
+  const books = [
+    {
+      title: "hunger games",
+      author: "Katherine"
+    },
+    {
+      title: "harry potter",
+      author: "michael jordan"
+    },
+    {
+      title: "greasers",
+      author: "Peter"
+    }
+];
+  for (const [key, value] of Object.entries(books[2])) {
+    document.write(key + ":" + value + "<br><br>" );
+  }</pre>`)
+  document.write("Output:" + "<br>");
+const books = [
+  {
+    title: "hunger games",
+    author: "Katherine"
+  },
+  {
+    title: "harry potter",
+    author: "michael jordan"
+  },
+  {
+    title: "greasers",
+    author: "Peter"
+  }
+];
+for (const [key, value] of Object.entries(books[2])) {
+document.write(key + ":" + value + "<br><br>" );
+}
+}
+
+green("6. Make a hash to store 3 different states and their capitals. Then add a new state and capital and print the hash to see the results." + "<br>");
+{
+  document.write(`<pre>
+  const states = {
+    Illinois: "Springfield",
+    California: "Sacramento",
+    Michigan: "Lansing"
+};
+  states.North_Carolina = "Raleigh"
+
+  for (const [key, value] of Object.entries(states)){
+    document.write(key + ":" + value + "<br><br>");
+  }</pre>`);
+
+  document.write("Output:" + "<br>");
+const states = {
+  Illinois: "Springfield",
+  California: "Sacramento",
+  Michigan: "Lansing"
+};
+states.North_Carolina = "Raleigh"
+for (const [key, value] of Object.entries(states)){
+  document.write(key + ":" + value + "<br><br>");
+}
+}
+
+green("7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines." + "<br>");
+{
+  document.write(`<pre>
+  const laptop = {
+    brand: "HP",
+    model: "2nd Gen",
+    year: 2023
+  }
+
+  for (const [key, value] of Object.entries(laptop)) {
+    document.write(key + ":" + value + "<br><br>");
+  }</pre>`);
+
+document.write("Output:" + "<br>");
+const laptop = {
+  brand: "HP",
+  model: "2nd Gen",
+  year: 2023
+}
+
+for (const [key, value] of Object.entries(laptop)) {
+document.write(key + ":" + value + "<br><br>");
+}
+}
+green("8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model." + "<br>");
+{
+  document.write(`<pre>  
+    const laptops = [
+      {
+        brand: "HP",
+        model: "1st Gen"
+      },
+      {
+        brand: "Mac OS",
+        model: "Air"
+      },
+      {
+        brand: "Windows",
+        model: "samsung"
+      },
+    ];
+
+    for (const [key, value] of Object.entries(laptops[1])) {
+      document.write(key + ":" + value + "<br><br>");
+    }</pre>`);
+  
+  document.write("Output:" + "<br>");
+  const laptops = [
+    {
+      brand: "HP",
+      model: "1st Gen"
+    },
+    {
+      brand: "Mac OS",
+      model: "Air"
+    },
+    {
+      brand: "Windows",
+      model: "samsung"
+    },
+  ];
+
+  for (const [key, value] of Object.entries(laptops[1])) {
+    document.write(key + ":" + value + "<br><br>");
+  }
+}
+
+green("9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result." + "<br>");
+{
+  document.write(`<pre>
+      const words = {
+        book: "a collection of written, printed, or illistrated pages bound together along one edge and enclosed with a cover. ",
+        continuity: "the unbroken and consistent existence or operation of something over a period of time"
+      };
+
+      words.assembly = "a meeting or group of people OR the act of building parts together.";
+
+      for (const [key, value] of Object.entries(words)){
+        document.write(key + ":" + value + "<br><br>");
+      }</pre>`);
+  
+  document.write("Output:" + "<br>");
+  const words = {
+    book: "a collection of written, printed, or illistrated pages bound together along one edge and enclosed with a cover. ",
+    continuity: "the unbroken and consistent existence or operation of something over a period of time"
+    // Ex. She maintained continuity in her studies --> she kept studying steadily without breaks.
+    // Steadily - happening or moving smoothly, continuously, and with consistency.
+  };
+
+  words.assembly = "a meeting or group of people OR the act of building parts together.";
+
+  for (const [key, value] of Object.entries(words)){
+  document.write(key + ":" + value + "<br><br>");
+  }
+}
+
+green("10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines." + "<br>");
+{
+document.write(`<pre>
+  const shirt = {
+    brand: "Nike",
+    color: "black",
+    size: "Large"
+  }
+  for (const [key, value] of Object.entries(shirt)) {
+    document.write(key + ":" + value + "<br><br>");
+  }</pre>`);
+document.write("Output:" + "<br>");
+const shirt = {
+  brand: "Nike",
+  color: "black",
+  size: "Large"
+}
+for (const [key, value] of Object.entries(shirt)) {
+  document.write(key + ":" + value + "<br><br>");
+}
+}
+// THESE ARE ^^^ ALL OBJECTS WITH KEY VALUE PAIRS IN JAVASCRIPT!
 </script>
 </body>
 </html>
