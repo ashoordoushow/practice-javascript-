@@ -988,6 +988,106 @@ for (const [key, value] of Object.entries(shirt)) {
 }
 }
 // THESE ARE ^^^ ALL OBJECTS WITH KEY VALUE PAIRS IN JAVASCRIPT!
+
+green("<b>Basic Level Link 6</b></br>" + "1. Write a method that takes in a number and returns the number times two. Then run the method and print the result." + "<br>");
+{
+  function numberTimesTwo(number) {
+    document.write(number * 2 + "<br><br>");
+  }
+
+  numberTimesTwo(4);
+}
+
+green("2. Write a method that takes in a string and returns the string with all capital letters. Then run the method and print the result." + "<br>");
+{
+  function stringToUpcase(string) {
+    document.write(string.toUpperCase() + "<br><br>"); 
+  }
+
+  stringToUpcase("basketball");
+}
+
+green("3. Write a method that takes in two numbers and returns the first number subtracted by the second. Then run the method and print the result." + "<br>");
+{
+  function numberSubtraction (number1, number2) {
+    return number1 - number2;
+  }
+
+  document.write(numberSubtraction(10, 5) + "<br><br>");
+}
+
+
+green("4. Write a method that takes in a number and returns the number times itself. Then run the method and print the result." + "<br>");
+{
+  function numberSquared(number) {
+    return number * number;
+  }
+
+  document.write(numberSquared(12) + "<br><br>");
+}
+
+green("5. Write a method that takes in a string and returns the first letter of the string. Then run the method and print the result." + "<br>");
+{
+  function firstLetter(string) {
+    return string[0];
+  }
+
+  document.write(firstLetter("happy") + "<br><br>");
+}
+
+green("6. Write a method that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the method and print the result." + "<br>");
+{
+  function stringCombine(string1, string2, string3) {
+    return string1 + " " + string2 + " " + string3;
+  }
+
+  document.write(stringCombine("Where", "are", "you") + "<br><br>");
+}
+
+
+green("7. Write a method that takes in a number and returns the number as a string. Then run the method and print the result." + "<br>");
+{
+  function numberToString(number) {
+    number = number.toString();
+    document.write(number + "<br>" + typeof number + "<br><br>");
+  }
+
+  numberToString(23);
+}
+
+green("8. Write a method that takes in a string and returns the string repeated 5 times. Then run the method and print the result." + "<br>");
+{
+  function repeatFiveTime(string) {
+    let x = 0;
+    while (x < 5) {
+      document.write(string + "<br>");
+      x++;
+    }
+  }
+
+  repeatFiveTime("Sargoon");
+  document.write("<br>");
+}
+
+green("9. Write a method that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the method and print the result." + "<br>");
+{
+function numberAverage(number1, number2, number3) {
+  return (number1 + number2 + number3) / 3;
+}
+
+document.write(Math.round(numberAverage(5, 9, 3)) + "<br><br>");
+}
+
+green("10. Write a method that takes in a number and returns the number times 10 plus 30. Then run the method and print the result." + "<br>");
+{
+  function numberTimesTenPlusThirty(number) {
+    return (number * 10) + 30;
+  }
+
+  document.write(numberTimesTenPlusThirty(10) + "<br><br>");
+}
+
+    
 </script>
 </body>
 </html>
