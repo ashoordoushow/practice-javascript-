@@ -1087,7 +1087,312 @@ green("10. Write a method that takes in a number and returns the number times 10
   document.write(numberTimesTenPlusThirty(10) + "<br><br>");
 }
 
-    
+green("<b>Basic Level Link 7</b><br>" + "1. Write a Song class with attributes for name, artist, and duration. "+ "<br>");
+{
+  document.write("Output:" + "<br>");
+  class Song {
+    constructor(name, artist, duration) {
+      this.name = name;
+      this.artist = artist;
+      this.duration=duration;
+    }
+
+    songDescription() {
+      return `This is my song: ${this.name} by ${this.artist} & the song is ${this.duration} long. <br><br>`;
+    }
+  }
+
+  const song = new Song("Ain't No Mountain High Enough", "Mel Gibson", "3 minutes");
+
+  document.write(song.songDescription());
+
+}
+
+green("2. Write a Rectangle class with attributes for width and height. "+ "<br>");
+{
+  document.write("Output:" + "<br>");
+  class Rectangle {
+    constructor(width, height) {
+      this.width = width;
+      this.height = height;
+    }
+
+    areaOfRectangle() {
+      return `${this.width} * ${this.height} will be the area of the rectangle!<br><br>`;
+    }
+  }
+
+  const rectangle = new Rectangle(21, 4);
+
+  document.write(rectangle.areaOfRectangle());
+
+}
+
+green("3. Write a Person class with attributes for name and age."+ "<br>");
+{
+  class Person {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+
+    person() {
+      return `My name is ${this.name} & I am ${this.age} years old. Hello!<br><br>`
+    }
+  }
+
+  const person = new Person("Bobby", 23);
+  document.write(person.person());
+}
+
+green("4. Write a Location class with attributes for latitude and longitude."+ "<br>");
+{
+  class Location{
+    constructor(lattitude, longitude) {
+      this.lattitude = lattitude;
+      this.longitude = longitude;
+    }
+
+    myLocation() {
+      return `I am located at these cordinites ${this.lattitude}, ${this.longitude}<br><br>`;
+    }
+  }
+
+  const personsLocation = new Location(23, 889);
+  document.write(personsLocation.myLocation());
+}
+
+green("5. Write an Account class with attributes for name and balance."+ "<br>");
+{
+  class Account {
+    constructor(name, balance) {
+      this.name = name;
+      this.balance = balance;
+    }
+
+    myAccount() {
+      return `My name is ${this.name} and my account balance is ${this.balance}! <br><br>`;
+    }
+  }
+
+  const user1 = new Account("Jordan", "$5,000,000");
+  document.write(user1.myAccount());
+}
+
+green("6. Write a Movie class with attributes for title, director, and year."+ "<br>");
+{
+  class Movie {
+    constructor(title, director, year) {
+      this.title = title;
+      this.director = director;
+      this.year = year;
+    }
+
+    myMovie() {
+      return `This movie ${this.title} is the best movie ever made by ${this.director} in ${this.year} <br><br>`
+    }
+  }
+
+  const user1 = new Movie("Hunger Games", "Steven Dawson", 2021);
+  document.write(user1.myMovie());
+}
+
+green("7. Write a Car class with attributes for make, model, year, and color. "+ "<br>");
+{
+  class Car {
+    constructor(make, model, year, color) {
+      this.make = make;
+      this.model = model;
+      this.year = year;
+      this.color = color;
+    }
+
+    myCar() {
+      return `This is the details of the car I am selling ${this.make} ${this.model} ${this.year} ${this.color} <br><br>`;
+    }
+  }
+
+  const user1 = new Car("Honda", "Accord", 2017, "Black");
+  document.write(user1.myCar());
+}
+
+green("8. Write a Point class with attributes for x, y, and z coordinates."+ "<br>");
+{
+  class Point {
+    constructor(x, y, z) {
+      this.x = x;
+      this.y = y;
+      this.z = z;
+    }
+
+    myCoordinates() {
+      return `These are my coordinates ${this.x}, ${this.y}, ${this.z} <br><br>`;
+    }
+  }
+
+  const userOneLocation = new Point(21, 3, 500);
+  document.write(userOneLocation.myCoordinates());
+}
+
+green("9. Write a Book class with attributes for title, author, and year."+ "<br>");
+{
+  class Book {
+    constructor(title, author, year) {
+      this.title = title;
+      this.author = author;
+      this.year = year;
+    }
+
+    myBook() {
+      return `I LOVE this book - ${this.title}, by ${this.author}, that will lead to ${this.year} <br><br>`;
+    }
+  }
+
+  const myFavoriteBook = new Book("the Bible", "Jesus Christ", "eternal life!");
+  document.write(myFavoriteBook.myBook());
+}
+
+green("10. Write a Plant class with attributes for name, size, and price."+ "<br>");
+{
+  class Plant {
+    constructor(name, size, price) {
+      this.name = name;
+      this.size = size;
+      this.price = price;
+    }
+
+    myPlant() {
+      return `I love this plant called the ${this.name}. It's ${this.size} tall, and it's only priced at ${this.price}! <br><br>`
+    }
+  }
+
+  const usersStatement = new Plant("Dandelion", "10 feet", "$5.00");
+  document.write(usersStatement.myPlant());
+}
+/* Class Notes
+
+➡️ class = plan/blueprint/template
+➡️ object = real version made from that plan
+
+class - is a template for creating objects - it's like a blueprint that describes what kind of data and behavior each object should have - but
+it's not an actual object yet.
+
+Think of a class as the blueprint for a house:
+• It defines what every house will have — walls, doors, windows, etc.
+• But the blueprint itself isn’t a real house.
+• You can use it to build multiple houses, each with different paint, furniture, etc.
+
+Class - template/blueprint
+Custom class - a class you defined yourself 
+Instance/ Object - Actual thing created from the class Ex. const myCar = new Car() <-- "myCar is an instance of the Car class" OR you can say "myCar is a class object (but is not the usual phrasing used)"
+Built-in class - A class provided by JavaScript Ex. Array, Date, Error, etc.
+
+JavaScript Example:
+class Car {                                 <-- blueprint/template for creating Car objects.
+  constructor(make, model) {                <-- constructor method sets up the instances for the objects automatically when you use keyword new  <-- Car()
+    this.make = make;
+    this.model = model;
+  }
+
+  drive() {                                             <-- this function is in the class template. (custom method), custom method that's secretly being held onto a protype
+    return `The ${this.make} ${this.model} is driving.`;     
+  }
+}
+
+const car1 = new Car("Toyota", "Camry");  <-- arguments passed into the constructor; car1 is a new instance (object) created from the Car class
+const car2 = new Car("Honda", "Civic");   ✅ IMPORTANT NOTE:“Class object” isn’t a standard term — we say “instance of the Car class” (or just object created from Car).
+
+document.write(car1.drive());           <-- calls the drive() method (defined on Car.prototype <-- secretly) using the car1 instance
+document.write(car2.drive());           <-- does same thing as car1 object but with different arguements
+
+
+Inherit - To inherit means to receive something from a parent.
+Like in real life — a child might inherit their parent’s eye color or hair type.
+
+In programming, an object inherits properties and methods from another object or class — meaning it automatically gets access to them without you having to rewrite them.
+
+Prototype - In JavaScript, a prototype is an internal object that other objects use to inherit properties and methods from.
+Every function and class automatically has a prototype property that defines what will be shared among all instances created from it.
+
+
+the new keyword - does four important things automatically:
+• Creates a new empty object → {}
+• Links that object to the class’s prototype (so it inherits methods like drive()).
+• Calls the class’s constructor() method — and passes in any arguments you provide ("Toyota", "Camry").
+• Returns the new object automatically (unless the constructor explicitly returns something else).
+
+The constructor() is a special built-in method inside every class.
+It’s called automatically whenever you use new.
+
+The constructor sets up the instance’s values,
+while the prototype holds all the shared behaviors (methods).
+
+Ex. of what the
+all the methods you define inside a class (except the constructor) are stored in the class’s prototype under the hood. all the methods in the class are being held into a prototype? 
+Example of how the JavaScript looks secretly behind the scenes:
+function Car(make, model) {
+  this.make = make;
+  this.model = model;
+}
+
+Car.prototype.drive = function() {                    <---
+  return `${this.make} ${this.model} is driving.`;
+};
+
+Car.prototype.stop = function() {                     <----
+  return `${this.make} ${this.model} stopped.`;
+};
+
+Concept	               Correct understanding
+Class	                 Template/blueprint
+Constructor            Sets up instance values
+Methods	               Stored on prototype
+Instance	             Object created from class
+this	                 Refers to the specific instance
+You can call	         Any of the class’s prototype methods
+
+
+this - is a keyword
+this = the new object being built (car1, car2, etc.)
+this - always refers to the object that is currently using or calling the code.
+
+VERY IMPORTANT TO KNOW:
+
+Here’s how this connects to OOP:
+• Class = blueprint for an object
+• Object (Instance) = created from that blueprint
+• Properties = this.make, this.model
+• Methods = drive()
+
+This is OOP in action.
+
+🧱 3. OOP’s 4 main principles:
+Principle	             Meaning                                                               	  Example
+
+Encapsulation	         Group related data and functions together inside a class	                Car holds both data (make, model) and behavior (drive())
+Abstraction            Hide internal details, expose only what’s needed	                        The user calls car1.drive() without worrying how it works
+Inheritance	           One class can extend another	                                            class ElectricCar extends Car {}
+Polymorphism	         Different classes can share the same method name but behave differently	 Both Car and Boat could have their own drive() methods
+
+🧠 4. Summary:
+Concept	                      Description
+
+OOP	                          A programming style centered around objects and classes
+Class	                        The blueprint or template for making objects
+Object / Instance	            A specific item created from a class
+JavaScript OOP	              Implemented using class, constructor(), and prototype
+
+💡 In short:
+
+Yes — class is JavaScript’s way of doing Object-Oriented Programming (OOP).
+It lets you create structured, reusable, and organized code built around objects that have both data and behavior.
+✅ Yes — classes themselves are technically objects in JavaScript. 
+
+
+**** - A class is a special kind of function object that creates instances (objects), and uses a prototype object to share its methods.
+So yes — a class is an object in JavaScript — it’s just a very special one that acts like a blueprint for making other objects.
+ 
+*/
 </script>
 </body>
 </html>
