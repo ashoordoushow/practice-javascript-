@@ -1,11 +1,50 @@
-what are you trying to do?
-answer - i need to display the 1st question from javascript deliberate practice so it can show up on the browser (on my end).
+***BEFORE CODING ALWAYS UNDERSTAND THE QUESTION BEING ASKED, AND TERMONILOGIES BEING USED!!!
+***ALSO ONCE COMPLETED A PIECE OF CODE / QUESTION / SOLUTION - YOU NEED TO BE ABLE TO DECRIBE, EXPLAIN, UNDERSTAND EVERYTHING THAT IS HAPPENING AND WHY, & EXPLAIN IT IN ENGLISH TERMS, AND ALSO BE ABLE TO DO IT FROM SCRATCH WITH NO EXTERNAL HELP/RESOURCES***
 
-ok? what do you need to do, to do so successfully/
-answer - well i have to create 1 function that allows me to solve the question in javascript and also allows it to appear on the browser.
+JavaScript Deliberate Practice Notes:
+HTML = describes structure, the stage
+JavaScript = executes logic, the actor
 
-ok? so what does the function need to do?
-answer - it needs to take the content i am writing whether that is the question or javascript code and display it on the browser.
+JavaScript cannot be written outside the <script> tag for Ex. <h1>let x = 2</h1> all logic should be written inside the <scipt> tags,
+in html you can trigger javascript functions for Ex. <button onclick="doSomthing()">Click</button> (this is mainly for triggering functions, small interactions)
 
-gotchu bro but how?
-answer - first declare a function, then write the directions of the function. got it ? <-- YES!
+inside here:
+<script>
+This is where:
+
+variables
+
+functions
+
+logic
+
+calculations
+
+console.log
+
+document.write
+
+etc.
+
+This is real JavaScript code execution.
+</script>
+
+When you use backticks ``  <-- these are called template literals and are used for string interpolation ${text in here} <-- string interpolation allows you to display content together without concatentation (adding the + sign).
+
+interpolation(embeds) = combining(embidding - correct term/avoids confusion with math) values together, building one string, values are being held in placeholders - ${}
+concatentation(joins) = still building one string, + operator used to - join strings together (can get messy and harder to read)
+
+***NOTE TO SELF/ TO DO AFTER COMPLETED A COUPLE JAVASCRIPT DP QUESTIONS: (currently using internal javascript - beginner friendly)
+The professional rule you’ll hear later
+
+In real projects, devs often:
+
+put scripts in the head with defer
+
+or put scripts at the bottom of the body
+
+Both solve timing issues.
+
+But you do not need to worry about that yet.
+
+***ALSO ONCE COMPLETED A PIECE OF CODE / QUESTION / SOLUTION - YOU NEED TO BE ABLE TO DECRIBE, EXPLAIN, UNDERSTAND EVERYTHING THAT IS HAPPENING AND WHY, & EXPLAIN IT IN ENGLISH TERMS, AND ALSO BE ABLE TO DO IT FROM SCRATCH WITH NO EXTERNAL HELP/RESOURCES***

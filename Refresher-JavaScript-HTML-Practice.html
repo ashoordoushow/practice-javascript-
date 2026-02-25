@@ -12,10 +12,17 @@
 
   <script>
   function deliberatePracticeQuestions(text) {
-    document.write(`<span style="color: green">${text}</span><br>`);  
+    document.write(`<span>${text}</span><br>`);  
   };
 
-  deliberatePracticeQuestions("Hello");
+  {
+  deliberatePracticeQuestions(`1. Write a program that uses a variable to store a number, then prints that number plus 10.<br><br> let number = 23;<br>number = number + 10;<br>document.write(number);<br>`);
+
+  let number = 23;
+  number = number + 10;
+  document.write("Answer:" + " " + number);
+  }
+  
 
 </script>
 </body>
