@@ -12,7 +12,7 @@
 
   <script>
   function deliberatePracticeQuestions(text) {
-    document.write(`<span>${text}</span><br>`);  
+    document.write(`<div>${text}</div><br>`);  
   };
 
   {
@@ -20,10 +20,303 @@
 
   let number = 23;
   number = number + 10;
-  document.write("Answer:" + " " + number);
+  document.write("Answer:" + " " + number + "<br><br>");
   }
-  
 
+  {
+    deliberatePracticeQuestions(`2. Write a program that uses a variable to store a word, then prints that word with all capital letters. <br>let word = "Hello World";<br>word = word.toUpperCase();<br> document.write("Answer:" + " " + word);`);
+
+    let word = "Hello World";
+    word = word.toUpperCase();
+    document.write("Answer:" + " " + word);
+  }
+
+  
 </script>
 </body>
 </html>
+
+<!--🔧 Corrections (important)
+1) “HTML elements are converted to JavaScript objects”
+
+Mostly correct, but tighten it:
+
+The browser creates DOM nodes/objects representing your HTML elements.
+
+They’re accessible through JavaScript via document and DOM APIs.
+
+Better sentence:
+
+The browser parses HTML and builds the DOM (a tree of nodes/objects) that JavaScript can read and modify.
+
+2) “The DOM is a JavaScript object tree that renders your app”
+
+Close, but wording matters:
+
+The DOM is a representation of the document (page structure).
+
+The browser renders the page using the DOM + CSS.
+
+Better sentence:
+
+The DOM is the browser’s object representation of the page structure; the browser uses it (with CSS) to render what you see.
+
+3) lang="en" meaning
+
+Correct:
+
+It declares the document language for accessibility, translation, and search engines. ✅
+
+4) Metadata misconceptions (big one)
+
+You said:
+
+“UTF-8 is the best version so hackers cannot encrypt your app.”
+
+That’s not correct.
+
+What it really is:
+
+charset="UTF-8" tells the browser which character encoding to use.
+
+It prevents text from displaying incorrectly (symbols, non-English characters).
+
+It’s not a security feature.
+
+Better sentence:
+
+UTF-8 tells the browser how to interpret the bytes of your HTML as characters.
+
+5) Viewport meta tag
+
+You said you don’t know why — here’s the clean reason:
+
+name="viewport" + content="width=device-width, initial-scale=1.0"
+tells mobile browsers:
+
+“use the device width”
+
+“start zoom at 1x”
+This makes pages display correctly on phones.
+
+6) document.write details
+
+You said:
+
+“document is the whole html document & write is the property of the document object with a function value.”
+
+That’s a solid mental model. One tweak:
+
+document is a global object representing the page.
+
+write is a method (a function on the document object).
+
+Also important (don’t ignore this):
+document.write is mainly for learning demos; in real apps it’s usually avoided because it can overwrite the page if used after load.
+
+7) “div element to keep code in its own box”
+
+This is correct conceptually:
+
+<div> is a block container, useful for grouping and layout.
+
+But also note:
+
+<br> is a line break; using many <br> is okay for practice, but later you’ll prefer CSS or <pre> for code blocks.
+
+⚠️ One mismatch between your explanation and your code
+
+You said:
+
+“changing the value by adding 10 and printing it… plus a space plus the actual answer”
+
+Your code does do:
+
+number = number + 10;
+
+document.write("Answer:" + " " + number);
+
+✅ That’s consistent.
+A node is one item in the DOM tree.
+
+That’s it.
+
+If the DOM is a tree, a node is one branch or leaf on that tree.
+1️⃣ Element nodes
+
+Actual HTML elements:
+
+<div></div>
+<h1></h1>
+<p></p>
+
+Each element = one node
+
+2️⃣ Text nodes
+
+The text inside elements:
+
+<h1>Hello</h1>
+
+👉 "Hello" is its own node
+
+This surprises people.
+
+3️⃣ Attribute nodes (conceptually)
+
+Attributes like:
+
+<p class="intro">
+
+The class="intro" is data attached to the element node.
+
+4️⃣ The document node
+
+The entire page itself:
+
+document
+
+This is the root node of everything.
+
+Node vs Element (VERY common confusion)
+Term	Meaning
+Node - ANY item in the DOM tree
+Element	- A specific type of node (HTML tag)
+Text - node	The text inside an element
+
+(VERY IMPORTANT) 
+When the browser opens your HTML file, it does ALL of this automatically:
+
+1.Reads the HTML text
+
+2.Parses it (understands the tags)
+
+3.Builds the DOM tree in memory
+
+4.Creates the window object
+
+5.Creates the document object
+
+6.Exposes browser APIs to JavaScript
+
+7.Renders the page visually
+
+You didn’t request these steps.
+You didn’t configure them.
+The browser does this by default.
+
+(VERY IMPORTANT) - ***Learn more about this! vvv
+The core browser APIs (the ones you’ll actually touch)
+
+Here are the main categories — this is the part to remember 👇
+
+1️⃣ DOM API (most important for you right now)
+
+Used to interact with HTML & the page
+
+Examples:
+
+document
+
+querySelector
+
+createElement
+
+textContent
+
+appendChild
+
+You’re already using this.
+
+2️⃣ Window API
+
+Controls the browser environment
+
+Examples:
+
+window
+
+alert
+
+setTimeout
+
+innerWidth
+
+(You usually don’t write window. — it’s implied.)
+
+3️⃣ Console API
+
+Debugging tools
+
+Examples:
+
+console.log
+
+console.error
+
+4️⃣ Events API
+
+User interaction
+
+Examples:
+
+clicks
+
+key presses
+
+form submits
+
+mouse movement
+
+You’ll meet this soon.
+
+5️⃣ Fetch / Network APIs
+
+Talking to servers
+
+Examples:
+
+fetch()
+
+handling responses
+
+This is what people usually (incorrectly) think “API” means.
+
+6️⃣ Storage APIs
+
+Saving data in the browser
+
+Examples:
+
+localStorage
+
+sessionStorage
+
+7️⃣ Timing APIs
+
+Delays and scheduling
+
+Examples:
+
+setTimeout
+
+setInterval
+
+8️⃣ Media / Device APIs (advanced)
+
+Camera, microphone, location, etc.
+
+You don’t need these now.
+
+How many total?
+
+Roughly:
+
+50+ named browser APIs
+
+hundreds of individual methods/properties
+
+constantly evolving
+
+But again — this number is irrelevant for learning.
+-->

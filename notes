@@ -47,4 +47,11 @@ Both solve timing issues.
 
 But you do not need to worry about that yet.
 
+<div> - starts on a new line, takes up the full width, stacks vertically, used to group sections of content
+Think: “This is a box / section.”
+
+<span> - stays inside the same line, only wraps its content, does not break layout, used to target small pieces of text
+Think: “This is a label inside a sentence.”
+
 ***ALSO ONCE COMPLETED A PIECE OF CODE / QUESTION / SOLUTION - YOU NEED TO BE ABLE TO DECRIBE, EXPLAIN, UNDERSTAND EVERYTHING THAT IS HAPPENING AND WHY, & EXPLAIN IT IN ENGLISH TERMS, AND ALSO BE ABLE TO DO IT FROM SCRATCH WITH NO EXTERNAL HELP/RESOURCES***
+
