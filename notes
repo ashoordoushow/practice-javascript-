@@ -1,6 +1,22 @@
 ***BEFORE CODING ALWAYS UNDERSTAND THE QUESTION BEING ASKED, AND TERMONILOGIES BEING USED!!!
 ***ALSO ONCE COMPLETED A PIECE OF CODE / QUESTION / SOLUTION - YOU NEED TO BE ABLE TO DECRIBE, EXPLAIN, UNDERSTAND EVERYTHING THAT IS HAPPENING AND WHY, & EXPLAIN IT IN ENGLISH TERMS, AND ALSO BE ABLE TO DO IT FROM SCRATCH WITH NO EXTERNAL HELP/RESOURCES***
 
+***Where developers ACTUALLY learn methods
+Step 1 — Define the operation in English Before code, say: “I need to reverse a word.”
+Now ask: Is this string manipulation?, Is it array manipulation?, Is it math?, Is it logic?, In this case → string manipulation. Step 2 — Guess what category it belongs to, Ask yourself:, “Does this belong to a string?”, “Does this belong to an array?”, “Does this belong to a number?”, You don’t need the exact method — just the owner. Example guess: “Strings probably have methods for changing text.” That guess is enough.
+
+Not from memory. From: Google. Learn. Try out.
+
+- MDN (most important)
+
+- official docs
+
+- repeated exposure in projects
+
+- debugging errors
+
+- Methods become familiar through use, not study.
+
 JavaScript Deliberate Practice Notes:
 HTML = describes structure, the stage
 JavaScript = executes logic, the actor

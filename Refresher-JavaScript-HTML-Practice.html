@@ -24,13 +24,42 @@
   }
 
   {
-    deliberatePracticeQuestions(`2. Write a program that uses a variable to store a word, then prints that word with all capital letters. <br>let word = "Hello World";<br>word = word.toUpperCase();<br> document.write("Answer:" + " " + word);`);
+    deliberatePracticeQuestions(`2. Write a program that uses a variable to store a word, then prints that word with all capital letters. <br><br>let word = "Hello World";<br>word = word.toUpperCase();<br> document.write("Answer:" + " " + word);`);
 
     let word = "Hello World";
     word = word.toUpperCase();
-    document.write("Answer:" + " " + word);
+    document.write("Answer:" + " " + word + "<br><br>");
   }
 
+  {
+    deliberatePracticeQuestions(`3. Write a program that uses variables to store two numbers, then prints the numbers added together.<br><br> let number1 = 23; <br> let number2 = 45; <br> sum = number1 + number2; <br> document.write(sum); `);
+
+    let number1 = 23;
+    let number2 = 45;
+    sum = number1 + number2;
+    document.write("Answer:" + " " + sum + "<br><br>");
+  }
+  
+  {
+    deliberatePracticeQuestions(`4. Write a program that uses a variable to store a word, then prints that word in reverse order.`);
+
+    let word = "basketball";
+    word = word.split("").reverse("").join("");
+    document.write(word);
+    
+    // i did it I figured it out as real developer, without chatGPT, i used this thinking method developers use! -
+    // Not from memory. From: Google. Learn. Try out.
+
+    // - MDN (most important) - documentation written for developers (Mozilla Developer Network) - not just for Firefox -referral manual like a dictionary
+
+    // - official docs
+
+    // - repeated exposure in projects
+
+    // - debugging errors
+
+    // - Methods become familiar through use, not study.
+  }
   
 </script>
 </body>
