@@ -24,7 +24,7 @@
   }
 
   {
-    deliberatePracticeQuestions(`2. Write a program that uses a variable to store a word, then prints that word with all capital letters. <br><br>let word = "Hello World";<br>word = word.toUpperCase();<br> document.write("Answer:" + " " + word);`);
+    deliberatePracticeQuestions(`2. Write a program that uses a variable to store a word, then prints that word with all capital letters. <br><br>let word = "Hello World";<br>word = word.toUpperCase();<br> document.write(word);`);
 
     let word = "Hello World";
     word = word.toUpperCase();
@@ -46,7 +46,34 @@
 
     let word = "basketball";
     word = word.split("").reverse().join(""); // <-- question for tomorrow why the ""'s in the (), answer: .split("") uses an empty string as a separator, meaning the string is split between every character and turned into an array of characters, .reverse() does not take any arguments; it simply reverses the array in place, .join("") uses an empty string as a separator to join all characters back, together into one string with nothing in between - you can add - or , or . inside the "" in join to be in between every character if you'd like.
-    document.write(word);
+    document.write("Answer: " + word + "<br><br>");
+  }
+
+  {
+    deliberatePracticeQuestions(`Write a program that uses a variable to store a number, then prints the number times 10.<br><br> let number = 34;<br>
+    document.write(number * 10); `);
+
+    // let number = 0;
+    // while (number < 10) {
+    //   document.write("34<br>");      <-- incorrect answer for this question! attention to detail!!! ^^ it says print number times 10 NOT 10 times!!!!
+    //   number += 1
+    // };
+
+    let number = 34;
+    document.write("Answer: " + number * 10 + "<br><br>"); 
+    
+    // i need the number to print out 10 times how? ok i declared the variable and set the number value. Now how do i get it to print 10 times. typically i would write 
+  }
+
+  {
+    deliberatePracticeQuestions(`Write a program that uses variables to store two words, then prints both words on the same line in all capital letters.<br><br> let word1 = "money";<br>let word2 = "poverty";<br>document.write(word1.toUpperCase() + " " + word2.toUpperCase());`);
+    let word1 = "money";
+    let word2 = "poverty";
+    document.write("Answer: " + word1.toUpperCase() + " " + word2.toUpperCase() + "<br><br>");
+  }
+
+  {
+    
   }
   
 </script>
