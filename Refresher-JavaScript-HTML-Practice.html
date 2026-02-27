@@ -41,29 +41,32 @@
   }
   
   {
-    deliberatePracticeQuestions(`4. Write a program that uses a variable to store a word, then prints that word in reverse order.`);
+    deliberatePracticeQuestions(`4. Write a program that uses a variable to store a word, then prints that word in reverse order.<br><br>let word = "basketball";
+    <br>word = word.split("").reverse().join("");<br>document.write(word);`);
 
     let word = "basketball";
-    word = word.split("").reverse("").join("");
+    word = word.split("").reverse().join(""); // <-- question for tomorrow why the ""'s in the (), answer: .split("") uses an empty string as a separator, meaning the string is split between every character and turned into an array of characters, .reverse() does not take any arguments; it simply reverses the array in place, .join("") uses an empty string as a separator to join all characters back, together into one string with nothing in between - you can add - or , or . inside the "" in join to be in between every character if you'd like.
     document.write(word);
-    
-    // i did it I figured it out as real developer, without chatGPT, i used this thinking method developers use! -
-    // Not from memory. From: Google. Learn. Try out.
-
-    // - MDN (most important) - documentation written for developers (Mozilla Developer Network) - not just for Firefox -referral manual like a dictionary
-
-    // - official docs
-
-    // - repeated exposure in projects
-
-    // - debugging errors
-
-    // - Methods become familiar through use, not study.
   }
   
 </script>
 </body>
 </html>
+<!--
+  I did it I figured it out as real developer, without chatGPT, i used this thinking method developers use! -
+   Not from memory. From: Google. Learn. Try out. 
+   ***& you DEBUGGED by looking for errors in the console!!!***
+
+   - MDN (most important) - documentation written for developers (Mozilla Developer Network) - not just for Firefox -referral manual like a dictionary
+
+   - official docs
+
+   - repeated exposure in projects
+
+   - debugging errors
+
+   - Methods become familiar through use, not study. -->
+
 
 <!--🔧 Corrections (important)
 1) “HTML elements are converted to JavaScript objects”
