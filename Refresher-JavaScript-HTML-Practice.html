@@ -100,6 +100,23 @@
     document.write("Answer: " + word.toLocaleLowerCase() + "<br><br>");
   }
   
+  {
+    deliberatePracticeQuestions(`<h4>Deliberate Practice Link 2 - Write if statements with valid syntax</h4>`);
+  }
+
+  {
+    deliberatePracticeQuestions(`Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.<br><br> let number = 212;<br>if (number == 10) { <br> document.write(0);<br>} else {<br>document.write(-1);<br>};`);
+
+    let number = 212;
+    if (number === 10) {
+      document.write(0);
+    } else {
+      document.write(-1);
+    };
+  // == loose equality (does type conversion) - "Are these values equal after JavaScript tries to make them the same type"
+  // === strict equality (no type conversion) - "Are these values equal and the same type?"
+  // Ex. code used for this ^^ 5 === "5" would be true for == and false for === (because they are the same value but different type.)
+  }
 </script>
 </body>
 </html>
