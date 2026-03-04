@@ -304,7 +304,28 @@
     }
   }
 
+  {
+    deliberatePracticeQuestions(`3. Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".`);
+    
+    const params = new URLSearchParams(window.location.search);
+const word = params.get("word");
+
+if (word !== null) {
+  if (word === "stop") {
+    document.write("Loop stopped.");
+  } else {
+    document.write("Enter another word...");
+  }
+}
+  }
+
 </script>
+
+<form>
+  <input name="word" type="text" placeholder="Enter a word">
+  <button type="submit">Submit</button>
+</form>
+
 </body>
 </html>
 <!--
