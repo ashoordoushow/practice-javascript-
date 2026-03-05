@@ -344,6 +344,19 @@ if (word !== null) {
   {
     deliberatePracticeQuestions(`6. Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.`);
 
+   
+      const params = new URLSearchParams(window.location.search);
+const number = params.get(number);
+
+if (number !== null) {
+  if (number === "stop") {
+    document.write("Loop stopped.");
+  } else {
+    document.write("Enter another number...");
+  }
+}
+    }
+
 
   }
 </script>
