@@ -380,6 +380,18 @@ if (number !== null) {
       x += 1;
     }
   }
+
+  {
+  deliberatePracticeQuestions(`9. Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.`);
+
+  let word = "";
+
+  while (word.length <= 5) {
+    word = prompt("Enter a word:");
+  }
+
+  document.write("You entered a word longer than 5 letters: " + word);
+}
 </script>
 
 <form>
