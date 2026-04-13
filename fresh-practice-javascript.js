@@ -40,17 +40,40 @@ console.log(number * 10);
 
 // 6 Write a program that uses variables to store two words, then prints both words on the same line in all capital letters.
 
+let word1 = "Hello";
+let word2 = "Goodbye";
+
+console.log(word1.toUpperCase() + word2.toUpperCase());
+
 
 // 7 Write a program that uses a variable to store a word, then prints the number of letters in the word.
 
+// let word = "Nope";
+
+// console.log(word.length);
 
 // 8 Write a program that uses a variable to store a number with decimals, then prints the number as an integer.
+
+let decimalNumber = 2.6212;
+
+console.log(Math.round(decimalNumber));
 
 
 // 9 Write a program that uses a variable to store two numbers, then prints the two numbers multiplied together.
 
+let number1 = 233;
+let number2 = 9000;
+
+console.log(number1 * number2);
+
 
 // 10 Write a program that uses a variable to store a word, then prints the word with all lowercase letters.
+
+let word = "basketBALL";
+
+console.log(word.toLocaleLowerCase());
+
+
 
 
 
