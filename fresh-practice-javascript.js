@@ -198,22 +198,35 @@
 
 // 1 Write a while loop to print the numbers 1 through 10.
 
-let x = 1;
-while (x <= 10) {
-  console.log(x);
-  x += 1;
-} 
+// let x = 1;
+// while (x <= 10) {
+//   console.log(x);
+//   x += 1;
+// } 
 
 // 2 Write a while loop that prints the word "hello" 5 times.
 
-x = 0;
-while (x < 5) {
-  console.log("hello");
-  x += 1;
-}
+// x = 0;
+// while (x < 5) {
+//   console.log("hello");
+//   x += 1;
+// }
 
 // 3 Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
 
+const prompt = require('prompt-sync')();    /* <-- for this solution I downloaded external library npm install prompt-sync to get 
+                                             users input with Node.js*/
+let input = "";
+while (input !== "stop") {
+  input = prompt("Please Enter A Word:");
+  console.log(`You typed: ${input}`);
+}
+
+
+// step 1 need to ask user to enter a word
+// step 2 need users input
+// step 3 users input needs to equal "stop" to break
+// step 4 loop continues if users input is not "stop"
 
 // 4 Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
 
