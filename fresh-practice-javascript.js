@@ -179,19 +179,60 @@
 
 // 10 Use a variable to store a number, then write a condition that prints 5 if the number is greater than 80, prints 4 if the number is greater than 60, prints 3 if the number is greater than 40, prints 2 if the number is greater than 20, and prints 1 otherwise (only one print statement should occur).
 
-let number = 90;
+// let number = 90;
 
-if (number > 80) {
-  console.log(5);
-} else if (number > 60) {
-  console.log(4);
-} else if (number > 40) {
-  console.log(3);
-} else if (number > 20) {
-  console.log(2);
-} else {
-  console.log(1);
+// if (number > 80) {
+//   console.log(5);
+// } else if (number > 60) {
+//   console.log(4);
+// } else if (number > 40) {
+//   console.log(3);
+// } else if (number > 20) {
+//   console.log(2);
+// } else {
+//   console.log(1);
+// }
+
+
+// Deliberate Practice Link3 - Write a loop which modifies a variable each time the loop runs
+
+// 1 Write a while loop to print the numbers 1 through 10.
+
+let x = 1;
+while (x <= 10) {
+  console.log(x);
+  x += 1;
+} 
+
+// 2 Write a while loop that prints the word "hello" 5 times.
+
+x = 0;
+while (x < 5) {
+  console.log("hello");
+  x += 1;
 }
 
+// 3 Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
+
+
+// 4 Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
+
+
+// 5 Write a while loop that prints the number 9000 ten times.
+
+
+// 6 Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
+
+
+// 7 Write a while loop that prints the numbers 50 to 70.
+
+
+// 8 Write a while loop that prints the phrase "Around the world" 144 times.
+
+
+// 9 Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
+
+
+// 10 Write a while loop that prints the even numbers from 2 to 40.
 
 
