@@ -214,13 +214,13 @@
 
 // 3 Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
 
-const prompt = require('prompt-sync')();    /* <-- for this solution I downloaded external library npm install prompt-sync to get 
-                                             users input with Node.js*/
-let input = "";
-while (input !== "stop") {
-  input = prompt("Please Enter A Word:");
-  console.log(`You typed: ${input}`);
-}
+// const prompt = require('prompt-sync')();    /* <-- for this solution I downloaded external library npm install prompt-sync to get 
+//                                              users input with Node.js*/
+// let input = "";
+// while (input !== "stop") {
+//   input = prompt("Please Enter A Word:");
+//   console.log(`You typed: ${input}`);
+// }
 
 
 // step 1 need to ask user to enter a word
@@ -230,21 +230,58 @@ while (input !== "stop") {
 
 // 4 Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
 
+// let x = 0;
+
+// while (x <= 100) {
+//   console.log(x);
+//   x += 5;
+// }
 
 // 5 Write a while loop that prints the number 9000 ten times.
+
+// let x = 0;
+
+// while (x < 10) {
+//   console.log(9000);
+//   x += 1;
+// }
 
 
 // 6 Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
 
+// const prompt = require("prompt-sync")();
+
+// let input = "";
+// while (input <= 10) {
+//   input = prompt("Please Enter A Number Greater Than 10:");
+//   console.log(`You've Entered ${input}`);
+// }
 
 // 7 Write a while loop that prints the numbers 50 to 70.
 
+// let x = 50;
+
+// while (x <= 70) {
+//   console.log(x);
+//   x += 1;
+// }
 
 // 8 Write a while loop that prints the phrase "Around the world" 144 times.
 
+// let x = 0;
+// while (x < 144) {
+//   console.log("Around the world");
+//   x += 1;
+// }
 
 // 9 Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
 
+const prompt = require("prompt-sync")();
+
+let input = "";
+while (input < 5) {
+  input = prompt("Please Enter A Word:");
+}
 
 // 10 Write a while loop that prints the even numbers from 2 to 40.
 
