@@ -483,89 +483,89 @@
 
 // Write a method that takes in a number and returns the number times two. Then run the method and print the result.
 
-function numberTimesTwo(number) {
-  return number * 2;
-}
+// function numberTimesTwo(number) {
+//   return number * 2;
+// }
 
-console.log(numberTimesTwo(10));
+// console.log(numberTimesTwo(10));
 
 // Write a method that takes in a string and returns the string with all capital letters. Then run the method and print the result.
 
-function stringToUpperCase(string) {
-  return string.toUpperCase();
-}
+// function stringToUpperCase(string) {
+//   return string.toUpperCase();
+// }
 
-console.log(stringToUpperCase("hello"));
+// console.log(stringToUpperCase("hello"));
 
 // Write a method that takes in two numbers and returns the first number subtracted by the second. Then run the method and print the result.
 
-function numberSubtract(x, y) {
-  return x - y;
-}
+// function numberSubtract(x, y) {
+//   return x - y;
+// }
 
-console.log(numberSubtract(10, 5));
+// console.log(numberSubtract(10, 5));
 
 // Write a method that takes in a number and returns the number times itself. Then run the method and print the result.
 
-function numberDoubled(number) {
-  return number * number;
-}
+// function numberDoubled(number) {
+//   return number * number;
+// }
 
-console.log(numberDoubled(10));
+// console.log(numberDoubled(10));
 
 // Write a method that takes in a string and returns the first letter of the string. Then run the method and print the result.
 
-function firstLetter(string) {
-  return string = string[0];
-}
+// function firstLetter(string) {
+//   return string = string[0];
+// }
 
-console.log(firstLetter("basketball"));
+// console.log(firstLetter("basketball"));
 
 // Write a method that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the method and print the result.
 
-function combineSpace (string1, string2, string3) {
-  return `${string1} ${string2} ${string3}`;
-}
+// function combineSpace (string1, string2, string3) {
+//   return `${string1} ${string2} ${string3}`;
+// }
 
-console.log("How", "are", "you");
+// console.log("How", "are", "you");
 
 // Write a method that takes in a number and returns the number as a string. Then run the method and print the result.
 
-function numberToString(number) {
-  return number.toString();
-}
-const number = numberToString(23);
-console.log(number);
-console.log(typeof number);
+// function numberToString(number) {
+//   return number.toString();
+// }
+// const number = numberToString(23);
+// console.log(number);
+// console.log(typeof number);
 
 // Write a method that takes in a string and returns the string repeated 5 times. Then run the method and print the result.
 
-function stringRepeatedTimesFive(string) {
-  let x = 0;
-  while (x < 5) {
-    console.log(string);
-    x += 1;
-  }
-}
+// function stringRepeatedTimesFive(string) {
+//   let x = 0;
+//   while (x < 5) {
+//     console.log(string);
+//     x += 1;
+//   }
+// }
 
-stringRepeatedTimesFive("batman");
+// stringRepeatedTimesFive("batman");
 
 
 // Write a method that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the method and print the result.
 
-function numberAverage(x, y, z) {
-  return (x + y + z) / 3;
-}
+// function numberAverage(x, y, z) {
+//   return (x + y + z) / 3;
+// }
 
-console.log(numberAverage(10, 5, 2));
+// console.log(numberAverage(10, 5, 2));
 
 // Write a method that takes in a number and returns the number times 10 plus 30. Then run the method and print the result.
 
-function numberTimesTenPlusThirty(number) {
-  return number * 10 + 30;
-}
+// function numberTimesTenPlusThirty(number) {
+//   return number * 10 + 30;
+// }
 
-console.log(numberTimesTenPlusThirty(5));
+// console.log(numberTimesTenPlusThirty(5));
 
 // Deliberate Practice BASIC refresher Link 7 - Write a custom class with valid syntax
 
@@ -598,37 +598,113 @@ console.log(numberTimesTenPlusThirty(5));
 
 // Write a Person class with attributes for name and age.
 
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+}
+}
+
+const person = new Person("Jay", 25);
+
+console.log(person);
 
 // Write a Location class with attributes for latitude and longitude.
 
+class Location {
+  constructor(latitude, longitude) {
+    this.latitude = latitude;
+    this.longitude = longitude;
+  }
+}
+
+const location = new Location(32.2, 43.2);
+console.log(location);
 
 // Write an Account class with attributes for name and balance.
+
+class Account {
+  constructor(name, balance) {
+    this.name = name;
+    this.balance = balance;
+  }
+}
+
+const account = new Account("Chase", 500);
+console.log(account);
 
 
 // Write a Movie class with attributes for title, director, and year.
 
+class Movie {
+  constructor(title, director, year) {
+    this.title = title;
+    this.director = director;
+    this.year = year;
+  }
+}
+
+const movie = new Movie("Remember the Titans", "Bobby", 2013);
+
+console.log(movie);
+
 
 // Write a Car class with attributes for make, model, year, and color.
+
+class Car {
+  constructor(make, model, color) {
+    this.make = make;
+    this.model = model;
+    this.color = color;
+  }
+}
+
+const car = new Car("Honda", "Accord", "black");
+console.log(car);
 
 
 // Write a Point class with attributes for x, y, and z coordinates.
 
+class Point {
+  constructor(x, y, z) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+  }
+}
+
+const coordinates = new Point(21.3, 12.1, 99.2);
+console.log(coordinates);
 
 // Write a Book class with attributes for title, author, and year.
+
+class Book {
+  constructor(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+  }
+}
+
+const book = new Book("Bible", "JESUS CHRIST", 1384);
+console.log(book);
 
 
 // Write a Plant class with attributes for name, size, and price.
 
+class Plant {
+  constructor(name, size, price) {
+    this.name = name;
+    this.size = size;
+    this. price = price;
+  }
+}
 
-// Start with an array of numbers and create a new array with each number times 3.
-// For example, [1, 2, 3] becomes [3, 6, 9].
+const plant = new Plant("Dandelion", "Large", 34);
 
-// let numbers = [2, 3, 2];
-// let numbersTimesThree = [];
-// numbers.forEach(function (number) {
-//   numbersTimesThree.push(number * 3);
-// });
-// console.log(numbersTimesThree);
+console.log(plant);
+
+
 
 
 
