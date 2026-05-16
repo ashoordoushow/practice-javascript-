@@ -801,11 +801,149 @@
 
 // Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
 
-let city1 = "Chicago";
-let city2 = "Houston";
-let city3 = "LA";
+// let city1 = "Chicago";
+// let city2 = "Houston";
+// let city3 = "LA";
 
-console.log("I went to " + city1 + ", " + city2 + ", and " + city3);
+// console.log("I went to " + city1 + ", " + city2 + ", and " + city3);
+
+
+// Deliberate Practice INTERMEDIATE level - link 2 - Map an array to a new array with some computation performed on each item
+
+// Start with an array of numbers and create a new array with each number times 3.
+// For example, [1, 2, 3] becomes [3, 6, 9].
+
+// const numbers = [2, 3, 1];
+// const newNumbers = [];
+
+// numbers.forEach((number) => {
+//   return newNumbers.push(number * 3);
+// });
+
+// console.log(newNumbers);
+
+
+// Start with an array of strings and create a new array with each string upcased.
+// For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+
+// const strings = ["hello", "goodbye"];
+// const newStrings = [];
+
+// strings.forEach((string) => {
+//   return newStrings.push(string.toUpperCase());
+// });
+
+// console.log(newStrings);
+
+// Start with an array of hashes and create a new array of string values from each hash's :name key.
+// For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
+
+// const people = [
+//   {name: "Roger", age: 22},
+//   {name: "Mitch", age: 12}
+// ];
+// const name = [];
+
+// people.forEach((people) => {                               .forEach ((parameter) =>(arrow function) {rule/defined}) - this is a built-in array method
+//   return name.push(people["name"]);
+// });
+
+// console.log(name);
+
+// Start with an array of numbers and create a new array with each number plus 7.
+// For example, [1, 2, 3] becomes [8, 9, 10].
+
+//  let ex. = x.map(function (parameter) {              Example of .map is a built in method
+      // rule/defined
+// });
+
+// const numbers = [2, 32, 12];
+
+// let newNumbers = numbers.map(function (number) {
+//   return number + 7;
+// });
+// console.log(newNumbers);
+
+// Start with an array of strings and create a new array with each string's length.
+// For example, ["hello", "goodbye"] becomes [5, 7].
+
+// const strings = ["nope", "yessir", "ok"];
+
+// const stringsLength = strings.map(function (string) {
+//   return string.length;
+// });
+
+// console.log(stringsLength);
+
+
+// Start with an array of hashes and create a new array of number values from each hash's :age key.
+// For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+
+// const people = [
+//   {name: "Todd", age: 13},
+//   {name: "frank", age: 45}
+// ];
+
+// const peopleAge = people.map(function (people) {
+//   return people["age"];
+// });
+
+// console.log(peopleAge);
+
+// Start with an array of numbers and create a new array with each number divided by 2.
+// For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
+
+// const numbers = [32, 12, 11];
+// const numberDividedByTwo = [];
+
+// numbers.forEach((number) => {
+//   return numberDividedByTwo.push(number / 2);
+// });
+
+// console.log(numberDividedByTwo);
+
+// Start with an array of strings and create a new array with each string's first letter only.
+// For example, ["hello", "goodbye"] becomes ["h", "g"].
+
+// const strings = ["good", "bad", "UGLY"];
+// const firstLetter = [];
+
+// strings.forEach((string) => {
+//   return firstLetter.push(string[0]);
+// });
+
+// console.log(firstLetter);
+
+
+// Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
+// For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
+
+// const people = [
+//   {name: "Doug", age: 54}, 
+//   {name: "Mitch", age: 21}
+// ];
+// let ageTimesTwo = [];
+// let index = 0;
+
+// while (index < people.length) {
+//   ageTimesTwo.push(people[index].age * 2);
+//   index += 1;
+// }
+
+// console.log(ageTimesTwo);
+
+// Start with an array of numbers and create a new array with each number converted into a string.
+// For example, [1, 2, 3] becomes ["1", "2", "3"].
+
+const numbers = [43, 1, 21];
+const numberToString = [];
+
+numbers.forEach((number) => {
+  return numberToString.push(number.toString());
+});
+
+console.log(numberToString);
+
 
 
 
