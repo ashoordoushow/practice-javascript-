@@ -598,113 +598,214 @@
 
 // Write a Person class with attributes for name and age.
 
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-}
-}
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+// }
 
-const person = new Person("Jay", 25);
+// const person = new Person("Jay", 25);
 
-console.log(person);
+// console.log(person);
 
 // Write a Location class with attributes for latitude and longitude.
 
-class Location {
-  constructor(latitude, longitude) {
-    this.latitude = latitude;
-    this.longitude = longitude;
-  }
-}
+// class Location {
+//   constructor(latitude, longitude) {
+//     this.latitude = latitude;
+//     this.longitude = longitude;
+//   }
+// }
 
-const location = new Location(32.2, 43.2);
-console.log(location);
+// const location = new Location(32.2, 43.2);
+// console.log(location);
 
 // Write an Account class with attributes for name and balance.
 
-class Account {
-  constructor(name, balance) {
-    this.name = name;
-    this.balance = balance;
-  }
-}
+// class Account {
+//   constructor(name, balance) {
+//     this.name = name;
+//     this.balance = balance;
+//   }
+// }
 
-const account = new Account("Chase", 500);
-console.log(account);
+// const account = new Account("Chase", 500);
+// console.log(account);
 
 
 // Write a Movie class with attributes for title, director, and year.
 
-class Movie {
-  constructor(title, director, year) {
-    this.title = title;
-    this.director = director;
-    this.year = year;
-  }
-}
+// class Movie {
+//   constructor(title, director, year) {
+//     this.title = title;
+//     this.director = director;
+//     this.year = year;
+//   }
+// }
 
-const movie = new Movie("Remember the Titans", "Bobby", 2013);
+// const movie = new Movie("Remember the Titans", "Bobby", 2013);
 
-console.log(movie);
+// console.log(movie);
 
 
 // Write a Car class with attributes for make, model, year, and color.
 
-class Car {
-  constructor(make, model, color) {
-    this.make = make;
-    this.model = model;
-    this.color = color;
-  }
-}
+// class Car {
+//   constructor(make, model, color) {
+//     this.make = make;
+//     this.model = model;
+//     this.color = color;
+//   }
+// }
 
-const car = new Car("Honda", "Accord", "black");
-console.log(car);
+// const car = new Car("Honda", "Accord", "black");
+// console.log(car);
 
 
 // Write a Point class with attributes for x, y, and z coordinates.
 
-class Point {
-  constructor(x, y, z) {
-    this.x = x;
-    this.y = y;
-    this.z = z;
-  }
-}
+// class Point {
+//   constructor(x, y, z) {
+//     this.x = x;
+//     this.y = y;
+//     this.z = z;
+//   }
+// }
 
-const coordinates = new Point(21.3, 12.1, 99.2);
-console.log(coordinates);
+// const coordinates = new Point(21.3, 12.1, 99.2);
+// console.log(coordinates);
 
 // Write a Book class with attributes for title, author, and year.
 
-class Book {
-  constructor(title, author, year) {
-    this.title = title;
-    this.author = author;
-    this.year = year;
-  }
-}
+// class Book {
+//   constructor(title, author, year) {
+//     this.title = title;
+//     this.author = author;
+//     this.year = year;
+//   }
+// }
 
-const book = new Book("Bible", "JESUS CHRIST", 1384);
-console.log(book);
+// const book = new Book("Bible", "JESUS CHRIST", 1384);
+// console.log(book);
 
 
 // Write a Plant class with attributes for name, size, and price.
 
-class Plant {
-  constructor(name, size, price) {
-    this.name = name;
-    this.size = size;
-    this. price = price;
-  }
-}
+// class Plant {
+//   constructor(name, size, price) {
+//     this.name = name;
+//     this.size = size;
+//     this. price = price;
+//   }
+// }
 
-const plant = new Plant("Dandelion", "Large", 34);
+// const plant = new Plant("Dandelion", "Large", 34);
 
-console.log(plant);
+// console.log(plant);
 
 
+// Deliberate Practice INTERMEDIATE level - Link 1 - Insert a variable into a string using either concatenation or interpolation
+
+// Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
+
+// let firstName = "John";
+// let lastName = "Jones";
+
+// console.log(firstName + lastName);
+
+
+// Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+
+// let firstName = "Sonny";
+// let lastName = "Brodie";
+
+// console.log(firstName + lastName);
+
+// Write a program that asks the user to input a word. If the word is "marco", print "polo".
+
+// const prompt = require("prompt-sync")();
+
+
+// while (true) {
+//   let input = prompt("Please Enter A Word: ");
+//   if (input === "marco") {
+//     console.log("polo");
+//     break;
+//   } else {
+//     console.log(input);
+//   }
+// }
+
+// Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+
+// let color1 = "blue";
+// let color2 = "green";
+// let color3 = "orange";
+
+// console.log("I like the colors " + color1 + ", " + color2 + ", and " + color3 + ".");
+
+
+// Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
+
+// let color1 = "yellow";
+// let color2 = "orange";
+// let color3 = "purple";
+
+// console.log(`Three colors = ${color1}, ${color2}, and ${color3}`);
+
+
+
+// Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+
+
+// const prompt = require("prompt-sync")();
+
+// while (true) {
+//   input = prompt("Please Enter A Name: ");
+//   if (input != "Santa") {
+//     console.log("You're not Santa!");
+//   } else {
+//     break;
+//   }
+// }
+
+// Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
+
+// let title = "Sports";
+// let author = "James";
+
+// console.log(title + " " + author);
+
+// Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
+
+// let title = "Sports";
+// let author = "James";
+
+// console.log(`${title} ${author}`);
+
+// Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
+
+// const prompt = require("prompt-sync")();
+
+// while (true) {
+//   password = prompt("Please Enter A Password: ");
+//   if (password === "Joshua") {
+//     console.log("Shall we play a game?");
+//     break;
+//   } else {
+//     console.log("Access denied!");
+//     break;
+//   }
+// }
+
+// Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
+
+let city1 = "Chicago";
+let city2 = "Houston";
+let city3 = "LA";
+
+console.log("I went to " + city1 + ", " + city2 + ", and " + city3);
 
 
 
