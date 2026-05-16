@@ -465,48 +465,107 @@
 
 // Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
-const words = {bike: "Pedaling device", notebook: "collection of paper to write on"};
+// const words = {bike: "Pedaling device", notebook: "collection of paper to write on"};
 
-words["table"] = "platform to place items on";
-console.log(words);
+// words["table"] = "platform to place items on";
+// console.log(words);
 
 // Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
 
-const shirt = {brand: "nike", color: "black", size: "Large"};
+// const shirt = {brand: "nike", color: "black", size: "Large"};
 
-console.log(shirt["brand"]);
-console.log(shirt["color"]);
-console.log(shirt["size"]);
+// console.log(shirt["brand"]);
+// console.log(shirt["color"]);
+// console.log(shirt["size"]);
 
 
 // Deliberate Practice Link 6 BASIC refresher - Write a custom method with valid syntax
 
 // Write a method that takes in a number and returns the number times two. Then run the method and print the result.
 
-// function numberTimesTwo(number) {
-//   return number * 2;
-// }
+function numberTimesTwo(number) {
+  return number * 2;
+}
 
-// console.log(numberTimesTwo(10));
+console.log(numberTimesTwo(10));
 
 // Write a method that takes in a string and returns the string with all capital letters. Then run the method and print the result.
 
+function stringToUpperCase(string) {
+  return string.toUpperCase();
+}
+
+console.log(stringToUpperCase("hello"));
+
 // Write a method that takes in two numbers and returns the first number subtracted by the second. Then run the method and print the result.
+
+function numberSubtract(x, y) {
+  return x - y;
+}
+
+console.log(numberSubtract(10, 5));
 
 // Write a method that takes in a number and returns the number times itself. Then run the method and print the result.
 
+function numberDoubled(number) {
+  return number * number;
+}
+
+console.log(numberDoubled(10));
+
 // Write a method that takes in a string and returns the first letter of the string. Then run the method and print the result.
+
+function firstLetter(string) {
+  return string = string[0];
+}
+
+console.log(firstLetter("basketball"));
 
 // Write a method that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the method and print the result.
 
+function combineSpace (string1, string2, string3) {
+  return `${string1} ${string2} ${string3}`;
+}
+
+console.log("How", "are", "you");
+
 // Write a method that takes in a number and returns the number as a string. Then run the method and print the result.
+
+function numberToString(number) {
+  return number.toString();
+}
+const number = numberToString(23);
+console.log(number);
+console.log(typeof number);
 
 // Write a method that takes in a string and returns the string repeated 5 times. Then run the method and print the result.
 
+function stringRepeatedTimesFive(string) {
+  let x = 0;
+  while (x < 5) {
+    console.log(string);
+    x += 1;
+  }
+}
+
+stringRepeatedTimesFive("batman");
+
+
 // Write a method that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the method and print the result.
+
+function numberAverage(x, y, z) {
+  return (x + y + z) / 3;
+}
+
+console.log(numberAverage(10, 5, 2));
 
 // Write a method that takes in a number and returns the number times 10 plus 30. Then run the method and print the result.
 
+function numberTimesTenPlusThirty(number) {
+  return number * 10 + 30;
+}
+
+console.log(numberTimesTenPlusThirty(5));
 
 // Deliberate Practice BASIC refresher Link 7 - Write a custom class with valid syntax
 
