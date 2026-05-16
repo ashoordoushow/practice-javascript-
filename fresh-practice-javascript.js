@@ -935,14 +935,184 @@
 // Start with an array of numbers and create a new array with each number converted into a string.
 // For example, [1, 2, 3] becomes ["1", "2", "3"].
 
-const numbers = [43, 1, 21];
-const numberToString = [];
+// const numbers = [43, 1, 21];
+// const numberToString = [];
 
-numbers.forEach((number) => {
-  return numberToString.push(number.toString());
+// numbers.forEach((number) => {
+//   return numberToString.push(number.toString());
+// });
+
+// console.log(numberToString);
+
+
+
+
+
+// Deliberate Practice INTERMEDIATE level refresher link3 - Select items from an array into a new array with items that match a certain condition
+
+// Start with an array of numbers and create a new array with only the numbers less than 20.
+// For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
+
+// const numbers = [32, 12, 1];
+// const numbersLessThanTwenty = [];
+
+// numbers.forEach((number) => {
+//   if (number < 20) {
+//     numbersLessThanTwenty.push(number);
+//   }
+// });
+
+// console.log(numbersLessThanTwenty);
+
+// Start with an array of strings and create a new array with only the strings that start with the letter "w".
+// For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
+
+// const strings = ["board", "bill", "wreck"];
+// const stringStartWithW = [];
+
+// strings.forEach((string) => {
+//   if (string[0] === "w") {
+//     stringStartWithW.push(string);
+//   }
+// });
+
+// console.log(stringStartWithW);
+
+// Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
+// For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
+
+// const items = [
+//   {item: "chair", price: 3}, 
+//   {item: "car", price: 4000}
+// ];
+// const priceGreaterThanFive = [];
+
+// items.forEach((item) => {
+//   if (item["price"] > 5) {
+//     priceGreaterThanFive.push(item);
+//   }
+// });
+
+// console.log(priceGreaterThanFive);
+
+
+// Start with an array of numbers and create a new array with only the even numbers.
+// For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+
+// const numbers = [65, 43, 42, 30, 2];
+// const evenNumbers = [];
+
+// numbers.forEach((number) => {
+//   if (number % 2 === 0 ) {                            // % 2 === 0  <-- this is the way to check if a number is even in JavaScript
+//     evenNumbers.push(number);
+//   }
+// });
+// console.log(evenNumbers);
+
+
+// Start with an array of strings and create a new array with only the strings shorter than 4 letters.
+// For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
+
+// const strings = ["hello", "goodbye", "tomorrow", "no", "yes"];
+// const fourLetterString = [];
+
+// strings.forEach((string) => {
+//   if (string.length < 4) {
+//     fourLetterString.push(string);
+//   }
+// });
+
+// console.log(fourLetterString);
+
+
+// Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
+// For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
+// you write a method inside of .map(making it a built-in array method, with function inside of it )
+
+// const items = [
+//   {name: "book", price: 20},
+//   {name: "phone", price: 1000}
+// ];
+      
+// let nameShorterThanSixLetters = 
+//   items.map(function (item) {        
+//     if (item["name"].length < 6) {
+//       return (item);
+//     }
+//   });
+
+// console.log(nameShorterThanSixLetters);
+
+// Start with an array of numbers and create a new array with only the numbers greater than or equal to 23.
+// For example, [8, 23, 0, 44, 1980, 3] becomes [23, 44, 1980].
+
+
+// const numbers = [76, 43, 2];
+// let greaterThanOrEqualTwentyThree = [];
+// let index = 0;
+
+// while (index < numbers.length) {
+//   if (numbers[index] >= 23) {
+//     greaterThanOrEqualTwentyThree.push(numbers[index]);
+//   }
+//   index += 1;
+// }
+
+// console.log(greaterThanOrEqualTwentyThree);
+
+// Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
+// For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
+
+// const strings = ["cool", "ok", "natural", "brave"];
+// const noLetterB = [];
+// let index = 0;
+
+// while (index < strings.length) {
+//   if (strings[index][0] !== "b") {
+//     noLetterB.push(strings[index]);
+//   }
+//   index += 1;
+// }
+
+// console.log(noLetterB);
+
+
+
+// Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
+// For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
+
+// const items = [
+//   {item: "building", price: 30000}, 
+//   {item: "shirt", price: 5}
+// ];
+// const itemLessThanTen = [];
+
+// items.forEach((item) => {
+//   if (item["price"] < 10) {
+//     itemLessThanTen.push(item);
+//   }
+// });
+
+// console.log(itemLessThanTen);
+
+
+
+// Start with an array of numbers and create a new array with only the odd numbers.
+// For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
+// .filter() is a JavaScript array method used to: go through a collection and keep ONLY the items that match a condition.
+// .map() and .forEach() both loop through every item in an array, .map() returns a NEW array containing one result for every item, .forEach() simply runs code for each item and does not return a new array.
+const numbers = [87, 54, 34];
+
+const oddNumbers = numbers.filter(function
+(number) {
+  return number % 2 !== 0;
 });
 
-console.log(numberToString);
+console.log(oddNumbers);
+
+
+// Deliberate Practice INTERMEDIATE level - Link 4 - Reduce an array to a single value based on some computation.
+
 
 
 
