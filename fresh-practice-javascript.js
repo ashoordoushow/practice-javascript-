@@ -1327,149 +1327,229 @@
 
 // Write a Person class with attributes and reader/writer methods for name and age. Then write a method that returns the person's name in all capital letters.
 
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
   
-  toCapitalLetters() {
-    return this.name.toUpperCase();
-  }
-}
+//   toCapitalLetters() {
+//     return this.name.toUpperCase();
+//   }
+// }
 
-let person = new Person("bob", 23);
-console.log(person.toCapitalLetters());
+// let person = new Person("bob", 23);
+// console.log(person.toCapitalLetters());
 
 // Write a Coordinate class with attributes and reader/writer methods for latitude and longitude. Then write a method that prints out the latitude and longitude in a single sentence.
 
-class Coordinate {
-  constructor(latitude, longitude) {
-    this.latitude = latitude;
-    this.longitude = longitude;
-  }
+// class Coordinate {
+//   constructor(latitude, longitude) {
+//     this.latitude = latitude;
+//     this.longitude = longitude;
+//   }
 
-  singleSentence() {
-    return `${this.latitude}, ${this.longitude}`;
-  }
-}
+//   singleSentence() {
+//     return `${this.latitude}, ${this.longitude}`;
+//   }
+// }
 
-let coordinates = new Coordinate(21.3, 123);
-console.log(coordinates.singleSentence());
+// let coordinates = new Coordinate(21.3, 123);
+// console.log(coordinates.singleSentence());
 
 // Write an Account class with attributes and reader/writer methods for name and balance. Then write a method that prints a warning if the balance is below $100.
 
-class Account {
-  constructor(name, balance) {
-    this.name = name;
-    this.balance = balance;
-  }
+// class Account {
+//   constructor(name, balance) {
+//     this.name = name;
+//     this.balance = balance;
+//   }
 
-  belowHundred() {
-    if (this.balance < 100) {
-      return "Warning balance is too low!";
-    }
-  }
-}
+//   belowHundred() {
+//     if (this.balance < 100) {
+//       return "Warning balance is too low!";
+//     }
+//   }
+// }
 
-let account = new Account("bob", 12);
-console.log(account.belowHundred());
+// let account = new Account("bob", 12);
+// console.log(account.belowHundred());
 
 
 // Write a Movie class with attributes and reader/writer methods for title, director, and year. Then write a method that prints out the attributes in a single sentence.
 
-class Movie {
-  constructor(title, director, year) {
-    this.title = title;
-    this.director = director;
-    this.year = year;
-  }
+// class Movie {
+//   constructor(title, director, year) {
+//     this.title = title;
+//     this.director = director;
+//     this.year = year;
+//   }
 
-  singleSentence() {
-    return `Movie is = ${this.title} ${this.director} ${this.year}`;
-  }
-}
+//   singleSentence() {
+//     return `Movie is = ${this.title} ${this.director} ${this.year}`;
+//   }
+// }
 
-let movie = new Movie("Boom", "bob", 2012);
-console.log(movie.singleSentence());
+// let movie = new Movie("Boom", "bob", 2012);
+// console.log(movie.singleSentence());
 
 
 // Write a Car class with attributes and reader/writer methods for make, model, year, and color. Then write a method that returns the make and model as a single sentence in all lowercase letters.
 
-class Car {
-  constructor(make, model, year) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-  }
+// class Car {
+//   constructor(make, model, year) {
+//     this.make = make;
+//     this.model = model;
+//     this.year = year;
+//   }
 
-  singleSentence() {
-    return `${this.make}${this.model}${this.year}`;
-  }
-}
+//   singleSentence() {
+//     return `${this.make}${this.model}${this.year}`;
+//   }
+// }
 
-let car = new Car("honda", "accord", 2032);
-console.log(car.singleSentence());
+// let car = new Car("honda", "accord", 2032);
+// console.log(car.singleSentence());
 
 
 // Write a Point class with attributes and reader/writer methods for x, y, and z coordinates. Then write a method that returns true if all 3 numbers are positive, otherwise it returns false.
 
-class Point {
-  constructor(x, y, z) {
-    this.x = x;
-    this.y = y;
-    this.z = z;
-  }
+// class Point {
+//   constructor(x, y, z) {
+//     this.x = x;
+//     this.y = y;
+//     this.z = z;
+//   }
 
-  truthyOrFalsy() {
-    if (this.x % 2 === 0 && this.y % 2 === 0 && this.z % 2 === 0) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-}
+//   truthyOrFalsy() {
+//     if (this.x % 2 === 0 && this.y % 2 === 0 && this.z % 2 === 0) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+// }
 
-let point = new Point(2, 86, 12);
-console.log(point.truthyOrFalsy());
+// let point = new Point(2, 86, 12);
+// console.log(point.truthyOrFalsy());
 
 
 // Write a Book class with attributes and reader/writer methods for title, author, and year. Then write a method that returns "Classic" if the book is older than 2000, otherwise it returns "Modern".
 
-class Book {
-  constructor(title, author, year) {
-    this.title = title;
-    this.author = author;
-    this.year = year;
-  }
+// class Book {
+//   constructor(title, author, year) {
+//     this.title = title;
+//     this.author = author;
+//     this.year = year;
+//   }
 
-  classicOrModern() {
-    if (this.year < 2000 ) {
-      return "Classic";
-    } else {
-      return "Modern";
-    }
-  }
-}
+//   classicOrModern() {
+//     if (this.year < 2000 ) {
+//       return "Classic";
+//     } else {
+//       return "Modern";
+//     }
+//   }
+// }
 
-let book = new Book("rich", "mike", 1999);
-console.log(book.classicOrModern());
+// let book = new Book("rich", "mike", 1999);
+// console.log(book.classicOrModern());
 
 
 // Write a Plant class with attributes and reader/writer methods for name, size, and price. Then write a method that prints out the attributes in a single sentence.
 
 
-class Plant {
-  constructor(name, size, price) {
-    this.name = name;
-    this.size = size;
-    this.price = price;
-  }
+// class Plant {
+//   constructor(name, size, price) {
+//     this.name = name;
+//     this.size = size;
+//     this.price = price;
+//   }
 
-  singleSentence() {
-    return `${this.name}${this.size}${this.price}`;
+//   singleSentence() {
+//     return `${this.name}${this.size}${this.price}`;
+//   }
+// }
+
+// let plant = new Plant("sunflower", "small", 900);
+// console.log(plant.singleSentence());
+
+
+
+
+
+
+// Deliberate practice ADVANCED level - link 1 - Write nested conditionals
+
+// Write a program that stores a customer's age and a movie's time in two separate variables. Then calculate the price of a movie ticket based on the following conditions:
+
+// If the age is 12 years old or younger, the ticket price is $5.
+// If the age is between 13 and 59 years old and the movie is before 6 PM, the ticket price is $7. After 6 PM, the ticket price is $10.
+// If the customer is 60 years old or older, the ticket price is $7.
+
+
+// class Customer {
+//   constructor(age, movieTime) {
+//     this.age = age;
+//     this.movieTime = movieTime;
+//   }
+
+
+//   priceOfMovieTicket() {
+//     if (this.age <= 12) {
+//       return "The ticket price is $5.";
+//     } else if (this.age >= 13 && this.age <= 59 && this.movieTime <= 6) {
+//       return "The ticket price is $7.";
+//     } else if (this.age >= 13 && this.age <= 59 && this.movieTime >= 6) {
+//       return "The ticket price is $10";
+//     } else if (this.age >= 60) {
+//       return "The ticket price is $7.";
+//     }
+//   }
+// }
+
+// let costumer = new Customer(60, 9);
+// console.log(costumer.priceOfMovieTicket());
+
+
+
+
+// Write a program to store the type of book (regular, reference, or special collection) and the number of days its overdue. Then calculate the fine amount based on the following conditions:
+
+// If the book is a regular book and overdue by up to 7 days, the fine is $1 per day.
+// If the book is a regular book and overdue by more than 7 days, the fine is $2 per day.
+// If the book is a reference book, there is no fine, regardless of the number of days overdue.
+// If the book is a special collection book, the fine is $5 per day, regardless of the number of days overdue.
+
+let daysOverdue = 10;
+let bookType = "regular";
+
+let fineAmount = 0;
+if (bookType === "regular") {
+  if (daysOverdue <= 7) {
+    fineAmount = daysOverdue * 1;
+  } else {
+    fineAmount = daysOverdue * 2;
   }
+} else if (bookType === "reference") {
+  fineAmount = 0;
+} else if (bookType === "special collection") {
+  fineAmount = daysOverdue * 5;
 }
 
-let plant = new Plant("sunflower", "small", 900);
-console.log(plant.singleSentence());
+console.log(`Fine amount: $${fineAmount}`);
+
+// Write a program that stores a person's order value and membership level (regular or premium). Then calculate a discount amount based on the following conditions:
+
+// If the total order value is less than $50, there is no discount.
+// If the total order value is between $50 and $100, the discount is 5% for regular customers and 10% for premium customers.
+// If the total order value is greater than $100, the discount is 10% for regular customers and 15% for premium customers.
+
+// Write a Ruby program that stores the weight of a package and the destination (domestic or international). Then calculate the shipping fee based on the following conditions:
+
+// If the destination is domestic:
+// If the weight is less than or equal to 1 kg, the shipping fee is $5.
+// If the weight is greater than 1 kg, the shipping fee is $10.
+// If the destination is an international shipment:
+// If the weight is less than or equal to 1 kg, the shipping fee is $15.
+// If the weight is greater than 1 kg, the shipping fee is $25.
