@@ -1101,19 +1101,188 @@
 // For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
 // .filter() is a JavaScript array method used to: go through a collection and keep ONLY the items that match a condition.
 // .map() and .forEach() both loop through every item in an array, .map() returns a NEW array containing one result for every item, .forEach() simply runs code for each item and does not return a new array.
-const numbers = [87, 54, 34];
+// const numbers = [87, 54, 34];
 
-const oddNumbers = numbers.filter(function
-(number) {
-  return number % 2 !== 0;
-});
+// const oddNumbers = numbers.filter(function
+// (number) {
+//   return number % 2 !== 0;
+// });
 
-console.log(oddNumbers);
+// console.log(oddNumbers);
 
 
 // Deliberate Practice INTERMEDIATE level - Link 4 - Reduce an array to a single value based on some computation.
 
+// Start with an array of numbers and compute the sum of all the numbers.
+// For example, [5, 10, 8, 3] becomes 26.
 
+
+// const numbers = [32, 1, 5];
+// let sum = 0;
+
+// numbers.forEach(function (number) {
+//   return sum = sum + number;
+// });
+
+// console.log(sum);
+
+
+// Start with an array of strings and combine them all into a single string.
+// For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
+
+// const strings = ["hello", "goodbye", "never"];
+// let stringsCombined = "";
+
+// strings.forEach(function (string) {
+//   return stringsCombined = stringsCombined + string;
+// });
+
+// console.log(stringsCombined);
+
+// Start with an array of hashes and compute the sum of the prices (from the :price key).
+// For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes 105.
+
+// const items = [
+//   {item: "chair", price: 20},
+//   {item: "couch", price: 10}
+// ];
+// let sum = 0;
+
+// items.forEach(function (item) {
+//   return sum = sum + item["price"];
+// });
+// console.log(sum);
+
+// Start with an array of numbers and compute the the minimum number.
+// For example, [5, 10, 8, 3, 9] becomes 3.
+
+// const numbers = [21, 22, 1, 3];
+// let minNumber = numbers[0];
+
+// numbers.forEach(function (number) {
+//   if (number < minNumber) {
+//     minNumber = number;
+//   }
+// });
+// console.log(minNumber);
+
+
+// Start with an array of strings and compute the total length of all the strings.
+// For example, ["volleyball", "basketball", "badminton"] becomes 29.
+
+// const strings = ["LORD", "food", "bread", "blue"];
+// let stringsLength = 0;
+
+// strings.forEach(function (string) {
+//   return stringsLength = stringsLength + string.length;
+// });
+
+// console.log(stringsLength);
+
+// Start with an array of hashes and find the hash with the lowest price (from the :price key).
+// For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
+
+
+// const items = [
+//   {item: "air", price: 5}, 
+//   {item: "tire", price: 15}, 
+//   {item: "table", price: 2}
+// ];
+// let lowestPrice = items[0].price;
+
+// items.map((item) => {
+//   if (item["price"] < lowestPrice) {
+//     lowestPrice = item["price"];
+//   }
+// });
+// console.log(lowestPrice);
+
+
+// Start with an array of numbers and compute product of all the numbers.
+// For example, [5, 10, 8, 3] becomes 1200.
+
+// const numbers = [21, 2, 2, 10];
+// let numbersProduct = numbers[0]; // 42, 84 , 840
+// let index = 1; // 2 , 3, 4
+
+// while (index < numbers.length) {
+//   numbersProduct = numbersProduct * numbers[index];
+//   index += 1;
+// }
+// console.log(numbersProduct);
+
+// 21 * 2 = 42
+// 21 = numbers[0] && 2 = numbers[1]
+// 42 * 2 = 84
+// 42 = is now new value && 2 = is numbers[2]
+// now 84 is new value && 10 = is final number / numbers[3]
+// 84 * 10 = 840
+
+// need loop to loop through all the numbers in the Array
+// then once retreived the first value of the array I NEED TO MULTIPLY IT TO THE NEXT VALUE & 
+// MAKE THE TOTAL BE MULTIPLIED TO VALUE AFTER THAT IN THE ARRAY TILL ALL VALUES IN ARRAY MULTIPLIED TOGETHER - HOW???
+
+// *** BIGGEST CODING HACK: WRITE DOWN EVERYTHING THAT IS GOING ON IN THE CODE, EVERY SINGLE STEP AND RESULT(s) , THEN YOU WILL NOW KNOW EXACTLY WHAT IS GOING ON AND EXACLT WHAT TO ADD OR CHANGE OR REMOVE , RESULTING IN YOUR SOLUTION!***
+
+
+
+
+// Start with an array of strings and combine them all into a single string, separated by dashes.
+// For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
+
+// const strings = ["Honda", "acura", "Toyota"];
+// let stringsDashed = "-";
+
+// strings.forEach(function (string) {
+//   return stringsDashed = stringsDashed + `${string}-`; 
+// }); 
+
+// console.log(stringsDashed);
+
+
+//Notes
+// i got an array of strings
+// i have an empty object named stringsDashed
+// then the array of strings is being looped through each individual value from the array
+// and stringDashed's values becomes whatever the string in the array is being looped to until the last value in array
+// First -  what is take the initial value from the array and make it -Honda- 
+// Second take the second value and make it (without dash before, because already their from Honda) basketball- attached to the first value total = -Honda-basketball-
+// Third take 3rd value Toyota- and add it attahed 
+// final value = -Honda-basketball-Toyota-
+// How?
+
+// Start with an array of hashes and find the hash with the shortest name (from the :name key).
+// For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
+
+// const items = [
+//   {name: "tea", price: 5},
+//   {name: "laptop", price: 300},
+//   {name: "basketball", price: 0},
+//   {name: "bu", price: 30000}
+// ];
+// let shortestName = items[0]; // "laptop", after first loop now value is - {name: "tea", price: 5}
+
+// items.forEach(function (item) {
+//   if (item.name.length < shortestName.name.length) {   // if 3 < 6  true
+//     return shortestName = item;                      // return shortestName = {name: "tea", price: 5}
+//   }
+// });
+
+// console.log(shortestName);
+
+
+// Start with an array of numbers and compute the maximum number.
+// For example, [5, 10, 8, 3] becomes 10.
+
+const numbers = [7, 4, 23, 11];
+let maxNumber = 0;
+
+numbers.forEach(function (number) {
+  if (number > maxNumber) {
+    return maxNumber = number;
+  }
+});
+console.log(maxNumber);
 
 
 
