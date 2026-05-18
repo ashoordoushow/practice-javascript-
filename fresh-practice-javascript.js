@@ -1747,44 +1747,44 @@
 // Write a ShoppingCart class that stores an array of items with methods to add an item, remove an item, and display all the items.
 
 
-class ShoppingCart {
-  constructor() {
-    this.items = [];
-  }
+// class ShoppingCart {
+//   constructor() {
+//     this.items = [];
+//   }
 
-  addItem(item, price) {
-    this.items.push({
-      item: item,
-      price: price
-    });
-  }
+//   addItem(item, price) {
+//     this.items.push({
+//       item: item,
+//       price: price
+//     });
+//   }
 
-  removeItem(itemName) {
-    this.items = this.items.filter(function(itemObject) {
-      return itemObject.item !== itemName;
-    });
-  }
+//   removeItem(itemName) {
+//     this.items = this.items.filter(function(itemObject) {
+//       return itemObject.item !== itemName;
+//     });
+//   }
 
-  displayItems() {
-    console.log("Items in shopping cart:");
+//   displayItems() {
+//     console.log("Items in shopping cart:");
 
-    this.items.forEach(function(itemObject) {
-      console.log(`${itemObject.item} - $${itemObject.price}`);
-    });
-  }
-}
+//     this.items.forEach(function(itemObject) {
+//       console.log(`${itemObject.item} - $${itemObject.price}`);
+//     });
+//   }
+// }
 
-const cart = new ShoppingCart();
+// const cart = new ShoppingCart();
 
-cart.addItem("Car", 50000);
-cart.addItem("Laptop", 1200);
-cart.addItem("Basketball", 40);
+// cart.addItem("Car", 50000);
+// cart.addItem("Laptop", 1200);
+// cart.addItem("Basketball", 40);
 
-cart.displayItems();
+// cart.displayItems();
 
-cart.removeItem("Laptop");
+// cart.removeItem("Laptop");
 
-cart.displayItems();
+// cart.displayItems();
 /* 
 - shoppingCart class
 constructor (item, price)
@@ -1815,3 +1815,134 @@ displayItems() {
 
 // Write a Contact class that stores the name, age, and contact_info, where contact_info is a hash that stores any additional information about the contact.
 
+
+
+
+
+
+// For Loops Practice - Write a program that loops through an array of numbers and prints ONLY the even numbers to the console.
+// Example array:
+
+// const numbers = [3, 8, 11, 20, 7, 14];
+
+// Example output:
+
+// 8
+// 20
+// 14
+
+// return   IS ONLT VALID INSIDE FUNCTIONS!!!!!
+
+
+// const numbers = [23, 1, 2 , 8];
+// const evenNumbers = [];
+
+// for (let index = 0; index < numbers.length; index++) {
+//   if (numbers[index] % 2 === 0) {
+//     evenNumbers.push(numbers[index]);
+//   }
+// }
+
+// console.log(evenNumbers);
+
+
+
+// Write a program that loops through an array of temperatures and prints ONLY the temperatures greater than 70.
+
+// Example array:
+
+// const temperatures = [55, 72, 68, 90, 61, 77];
+
+// Example output:
+
+// 72
+// 90
+// 77
+
+
+// const temperatures = [30, 70, 21, 90];
+// const tempGreaterThanSeventy = [];
+
+// for (let index = 0; index < temperatures.length; index++) {
+//   if (temperatures[index] > 70) {
+//     tempGreaterThanSeventy.push(temperatures[index]);
+//   }
+// }
+
+// console.log(tempGreaterThanSeventy);
+
+
+// Write an EmployeeManager class that stores an array of employees.
+
+// Each employee should have:
+
+// * name
+// * department
+// * active status (true/false)
+
+// Your class should include these methods:
+
+// 1. addEmployee(employee)
+
+// * Adds a new employee object into the employees array
+
+// 2. removeEmployee(name)
+
+// * Removes an employee by their name using a for loop
+
+// 3. displayActiveEmployees()
+
+// * Uses a for loop to print ONLY active employees
+
+// Example employee object:
+
+// {
+// name: "Ashoor",
+// department: "Engineering",
+// active: true
+// }
+
+// Example output:
+
+// Ashoor - Engineering
+
+const employees = [
+  { name: "bob", department: "sales", active_status: true },
+  { name: "Sam", department: "tech", active_status: false }
+];
+  
+class EmployeeManager {
+  constructor(employees) {
+    this.employees = employees;
+  }
+  
+  addEmployee(employee) {
+    this.employees.push(employee);
+  }
+  
+  removeEmployee(name) {
+    for (let i = 0; i < this.employees.length; i++) {
+      if (this.employees[i].name === name) {
+        this.employees.splice(i, 1);
+      }
+    }
+  }
+  
+  displayActiveEmployees() {
+    for (let i = 0; i < this.employees.length; i++) {
+      if (this.employees[i].active_status === true) {
+        console.log(
+          this.employees[i].name +
+  " - " +
+  this.employees[i].department
+        );
+      }
+    }
+  }
+}
+  
+const manager = new EmployeeManager(employees);
+  
+manager.displayActiveEmployees();
+
+  
