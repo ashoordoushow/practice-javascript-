@@ -1521,23 +1521,23 @@
 // If the book is a reference book, there is no fine, regardless of the number of days overdue.
 // If the book is a special collection book, the fine is $5 per day, regardless of the number of days overdue.
 
-let daysOverdue = 10;
-let bookType = "regular";
+// let daysOverdue = 10;
+// let bookType = "regular";
 
-let fineAmount = 0;
-if (bookType === "regular") {
-  if (daysOverdue <= 7) {
-    fineAmount = daysOverdue * 1;
-  } else {
-    fineAmount = daysOverdue * 2;
-  }
-} else if (bookType === "reference") {
-  fineAmount = 0;
-} else if (bookType === "special collection") {
-  fineAmount = daysOverdue * 5;
-}
+// let fineAmount = 0;
+// if (bookType === "regular") {
+//   if (daysOverdue <= 7) {
+//     fineAmount = daysOverdue * 1;
+//   } else {
+//     fineAmount = daysOverdue * 2;
+//   }
+// } else if (bookType === "reference") {
+//   fineAmount = 0;
+// } else if (bookType === "special collection") {
+//   fineAmount = daysOverdue * 5;
+// }
 
-console.log(`Fine amount: $${fineAmount}`);
+// console.log(`Fine amount: $${fineAmount}`);
 
 // Write a program that stores a person's order value and membership level (regular or premium). Then calculate a discount amount based on the following conditions:
 
@@ -1553,3 +1553,122 @@ console.log(`Fine amount: $${fineAmount}`);
 // If the destination is an international shipment:
 // If the weight is less than or equal to 1 kg, the shipping fee is $15.
 // If the weight is greater than 1 kg, the shipping fee is $25.
+
+
+
+
+
+
+// Deliberate Practice ADVANCED level - link 2 - Write nested loops
+//  nested — something placed inside something else
+
+// Ex. if (age >= 13) {
+//   if (time < 18) {
+//     console.log("Ticket is $7");
+//   }
+// }
+// OR 
+
+// for (let i = 0; i < 3; i++) {
+//   for (let j = 0; j < 3; j++) {
+//     consoyoule.log(i, j);
+//   }
+// }
+
+
+// Use a nested loop to convert an array of number pairs into a single flattened array.
+// For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
+
+// nested loop - a loop within a loop
+// the inital loop loops through the array values, and the nested takes the value pairs and makes them their own individual values
+
+
+// const numbers = [[21, 2], [90, 3], [1, 1]];
+// const numbersFlattened = [];
+// let index = 0;
+// while (index < numbers.length) { // the point of while loops(nested) here is to take the value of an array and isolate the values in the value in their   
+//   let numberPair = numbers[index];        // own individual value to manipulate / change the data.
+//   let index1 = 0;                         // so outer loop runs
+//   while (index1 < numberPair.length) {    //continues to inner loop, then inner loop runs all the way through till falsy, THEN outer loop will run again
+//     let number = numberPair[index1];      // and this process will repeat until falsy through and through
+//     numbersFlattened.push(number);
+//     index1 += 1;
+//   }
+//   index += 1;
+// }
+// console.log(numbersFlattened);
+  
+
+// Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
+// For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
+
+//so i need to take the first value of the first array and combine it with each value of the second array, then do the same with the second value of the first array, and rinse and repeat until all values in the first array are combined with every value of the second array.
+
+// const string1 = ["a", "c", "e"];       
+// const string2 = ["b", "d", "f"];
+// let stringsCombined = [];
+// let index = 0;
+// while (index < string1.length) {                // here we want to pull the first value from the first array
+//   let string = string1[index];                  // this is a -> so .lenght = 1
+//   let index1 = 0;
+//   while (index1 < string2.length) {           // here we want to take the first value that we pulled from the first array and loop/combine it with every
+//     let stringPair = string + string2[index1];    // value in the second array  // now stringPair is "ab"
+//     stringsCombined.push(stringPair);             // we add ab to the stringCombined empty array
+//     index1 += 1;
+//   }
+//   index += 1;
+// }             
+
+// console.log(stringsCombined);
+
+
+
+// Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
+// For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
+
+const strings = ["a", "b", "c"]; 
+const stringsCombined = [];
+let index = 0;
+while (index < strings.length) {
+  let index1 = 0;
+  while (index1 < strings.length) {               
+    if (index !== index1) {
+      stringsCombined.push(strings[index] + strings[index1]);                        
+    }               
+    index1 += 1;                                    //else statement is not needed here so it always runs.
+  }
+  index += 1;                
+}
+console.log(stringsCombined);
+
+
+
+
+
+// Use a nested loop to find the largest product of any two different numbers within a given array.
+// For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
+
+
+// Use a nested loop to compute the sum of all the numbers in an array of number pairs.
+// For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
+
+
+// Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
+// For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
+
+
+// Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
+// For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
+
+
+// Use a nested loop to find the largest sum of any two different numbers within an array.
+// For example, [1, 8, 3, 10] becomes 18.
+
+
+// Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+// For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
+
+
+// Use a nested loop to convert an array of string arrays into a single string.
+// For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
+
