@@ -1673,18 +1673,21 @@
 // For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
 
 
+
+
+
 // Deliberate Practice ADVANCED LEVEL - link 3 - Convert data from one data type into another
 
 // Convert an array of arrays into a hash.
 // For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}. (This is RUBY example syntax)
 
-const numberPairs = [[2, 1], [21, 3], [98, 4]];
-let hashNumbers = {};
+// const numberPairs = [[2, 1], [21, 3], [98, 4]];
+// let hashNumbers = {};
 
-numberPairs.forEach(function (numbers) {
-  return hashNumbers[numbers[0]] = numbers[1];          // .numbers is assignment/creation / [numbers[0]] is access/READ operation
-});
-console.log(hashNumbers);
+// numberPairs.forEach(function (numbers) {
+//   return hashNumbers[numbers[0]] = numbers[1];          // .numbers is assignment/creation / [numbers[0]] is access/READ operation
+// });
+// console.log(hashNumbers);
 /* 
   i need to take the the first valus of the array which is a pair of numbers in array itself
   and put it in a hash making the first number the key, and the second value the value ex. 1: 3 , ex. name: "bob"
@@ -1733,4 +1736,82 @@ console.log(hashNumbers);
 
 // Given a hash, create a new hash that has the keys and values switched.
 // For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
+
+
+
+
+
+
+// Deliberate Practice ADVANCED level - link 4 - Write a custom class with complex attributes
+
+// Write a ShoppingCart class that stores an array of items with methods to add an item, remove an item, and display all the items.
+
+
+class ShoppingCart {
+  constructor() {
+    this.items = [];
+  }
+
+  addItem(item, price) {
+    this.items.push({
+      item: item,
+      price: price
+    });
+  }
+
+  removeItem(itemName) {
+    this.items = this.items.filter(function(itemObject) {
+      return itemObject.item !== itemName;
+    });
+  }
+
+  displayItems() {
+    console.log("Items in shopping cart:");
+
+    this.items.forEach(function(itemObject) {
+      console.log(`${itemObject.item} - $${itemObject.price}`);
+    });
+  }
+}
+
+const cart = new ShoppingCart();
+
+cart.addItem("Car", 50000);
+cart.addItem("Laptop", 1200);
+cart.addItem("Basketball", 40);
+
+cart.displayItems();
+
+cart.removeItem("Laptop");
+
+cart.displayItems();
+/* 
+- shoppingCart class
+constructor (item, price)
+-stores array of items? guessing item: "cookies", price: 10
+- method to add an item , guessing 
+ex. if array of items is called const items
+addItem() {
+  return items.push(item: x, price: y)
+}
+- method to remove item
+ex.
+removeItem() {
+  return idk how to remove item from array
+}
+- method to display all items
+ex. 
+displayItems() {
+  return `${item}: ${price}`
+}
+
+*/
+
+// Write a Product class that stores the name, price, and metadata, where metadata is a hash that stores additional information about the product.
+
+
+// Write a Playlist class that stores a name and an array of songs with methods to add a song, remove a song, shuffle the songs into a random order, and display all the songs.
+
+
+// Write a Contact class that stores the name, age, and contact_info, where contact_info is a hash that stores any additional information about the contact.
 
